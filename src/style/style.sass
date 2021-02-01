@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+
+*
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+@mixin gray-Bg
+  background: #d6d6db
+
+@mixin gray-color
+  color: #818588
+
+@mixin redhead-color
+  color: #ff5816
+
+
+@mixin redhead-bg
+  background: #ff5816
+
+@mixin allText-color
+  color: #1b1f1f
+
+@mixin text-colorBlue
+  color: #4673ab
+
+@mixin bgColor-blue
+  background-color: #4673ab
+
+.txt-bold
+  font-weight: bold
+
+.txt-italic
+  font-style: italic
+
+.txt-color-blue
+  @include text-colorBlue
+
+.txt-color-blue:hover
+  text-decoration: underline
+
+.row
+  display: flex
+  flex-direction: row
+
+.column
+  display: flex
+  flex-direction: column
+
+.show-more
+  font-size: 13px
+  cursor: pointer
+
+.show-more:hover
+  text-decoration: underline
+//==============header
+.header
+  font-size: 13px
+
+  &__menu-list
+    background: black
+    justify-content: center
+
+  &__links
+    padding: 5px 10px
+    margin: 10px 22px
+    color: white
+//==============header
+
+
+
+.page
+  max-width: 1140px
+  margin: 0 auto
+  //border: 1px solid red
+
+  .personal-info
+    justify-content: space-between
+
+
+//==============personal-info
+.personal-info
+  margin: 12px 0
+  font-size: 13px
+
+
+  &__entrance
+    margin-right: 30px
+
+//==============personal-info
+//==============top-bar
+.top-bar
+  justify-content: space-between
+  align-items: center
+
+  &__logo
+    font-size: 46px
+
+    .redhead
+      @include redhead-color
+
+  &__subtitle-logo
+    font-size: 10px
+    @include gray-color
+
+  //==============top-bar
+  //==============top-bar__feedback
+  &__feedback
+    display: flex
+    flex-direction: column
+
+  &__number-phone
+    font-size: 24px
+    @include allText-color
+    text-decoration: none
+
+  &__operating-mode
+    font-size: 14px
+
+  &__social-number-phone
+    @include allText-color
+    text-decoration: none
+    font-size: 14px
+
+  //==============top-bar__search
+  &__search
+    margin: 5px 0
+
+  &__ruble-symbol
+    border: 1px solid #818588
+    font-size: 27px
+    border-radius: 50%
+    padding: 1px 10px 0 11px
+    margin: 0 5px
+
+  &__search-title
+    font-style: italic
+    @include redhead-color
+    font-weight: bold
+    font-size: 18px
+
+  &__search-subtitle
+    @include allText-color
+    font-size: 14px
+
+  &__input
+    background: #d6d6db
+    border: none
+    outline: none
+    height: 25px
+    margin-left: 5px
+    max-width: 160px
+
+  .border-radius
+    background: #d6d6db
+    border-radius: 7px
+    width: 230px
+    height: 30px
+    align-items: center
+
+  &__btn
+    @include redhead-bg
+    color: white
+    border: none
+    outline: none
+    cursor: pointer
+    padding: 5px
+    border-radius: 7px
+
+
+  //==============top-bar__pannier
+
+  //TODO - переписать стили
+  &__pannier-item
+    width: 185px
+    padding: 5px 0 5px 15px
+    background: url("../img/Layer751.png")
+    border-radius: 10px
+
+  &__svg
+    margin-top: 7px
+
+  .favorites
+    display: flex
+    align-items: center
+    font-size: 14px
+    margin-right: 10px
+
+  .comparison
+    font-size: 14px
+    display: flex
+    align-items: center
+
+  .svg > path
+    transition: .3s
+
+  .svg > path:hover
+    fill: greenyellow
+    cursor: pointer
+    transition: .3s
+
+//===============catalog
+.catalog
+  @include redhead-bg
+  border-radius: 10px
+  padding: 0 10px
+  display: flex
+  justify-content: center
+
+
+  &__item
+    font-size: 12px
+    color: white
+    border-right: 1px solid rgba(225, 225, 225, .5)
+    padding: 10px 6px
+    cursor: pointer
+    transition: .2s
+
+  &__item:last-child
+    border: none
+
+  &__item:hover
+    background-color: #ff743d
+    text-decoration: underline
+    transition: .2s
+
+//===============promo
+.promo
+  justify-content: space-between
+
+  &__content
+    width: 825px
+
+
+  &__banner
+    background-color: #d6d6db
+    border-radius: 7px
+    font-size: 16px
+    padding: 10px 5px
+    text-align: center
+    text-transform: uppercase
+
+
+.txt-bold
+  font-weight: bold
+
+.txt-italic
+  font-style: italic
+
+.txt-color-blue
+  @include text-colorBlue
+  cursor: pointer
+
+  &__carousel
+
+.news
+  font-size: 22px
+  max-width: 370px
+
+  span
+    font-size: 22px
+    text-transform: uppercase
+
+  &__box
+    margin-top: 10px
+    padding-top: 20px
+    border-top: 1px solid #d6d6db
+    max-width: 250px
+
+  &__txt-content
+
+  &__title
+
+  &__content
+
+  &__item
+    margin: 5px 0
+    font-size: 13px
+    border-bottom: 1px dotted #d6d6db
+    font-weight: normal
+    max-width: 345px
+
+  &__title
+    margin-bottom: 5px
+
+  &__title:hover
+    @include redhead-color
+    text-decoration: underline
+    cursor: pointer
+
+  &__picture
+    margin-right: 10px
+
+  &__date
+    position: relative
+    bottom: 10px
+    align-items: center
+
+  &__number
+    font-size: 18px
+    background-color: #ffcbed
+    border-radius: 5px
+    width: 33px
+    text-align: center
+    @include redhead-color
+
+  &__month
+    font-size: 13px
+
+  &__img
+    width: 60px
+
+
+//===============carousel
+.carousel
+  max-width: 825px
+  overflow: hidden
+
+  &__line
+    position: relative
+
+
+  &__img
+    max-width: 825px
+
+  &__item:nth-child(2)
+    img
+      transform: rotate(180deg)
+
+  &__item:nth-child(3)
+    img
+      transform: scale(-1, 1)
+
+  &__wrapper-btn
+    height: 0
+    position: relative
+    bottom: 200px
+    justify-content: space-between
+
+  &__btn
+    svg > path:hover
+      fill: #ff743d
+      cursor: pointer
+
+  .prev
+    margin-left: 7px
+
+
+//========================slider-content-repeated
+.ROW
+  margin: 0 10px
+  width: 920px
+  height: 1px
+  background: #d6d6db
+
+.slider-content-repeated
+  &__txt-list
+    justify-content: space-between
+    align-items: center
+
+  &__title
+    font-size: 22px
+
+  .carousel
+    min-width: 1140px
+    overflow: visible
+    margin-bottom: 10px
+
+    &__line
+      margin: 0 auto
+
+    &__item-wrapper
+      margin: 0 15px
+
+    &__item
+      padding: 21px 17px
+      max-height: 388px
+      width: 210px
+      border: 2px solid #d6d6db
+      border-radius: 10px
+
+
+    &__item:hover
+      border: 2px solid #ff5816
+
+
+    &__top-icon
+      position: relative
+      left: 12px
+      bottom: 1px
+      z-index: 8
+      width: 0
+      height: 0
+
+    &__wrapper-img
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 2
+
+      img
+        width: 150px
+        transform: scale(1, 1)
+
+
+    &__img
+
+    &__title
+      margin: 20px 0 15px 0
+      font-size: 16px
+      text-decoration: underline
+      height: 70px
+      font-weight: bold
+      padding: 0 5px
+
+    &__title:hover
+      @include redhead-color
+
+    &__cost
+      align-items: center
+
+    &__txt-price
+      font-size: 13px
+
+    &__new-price
+      font-size: 18px
+      font-weight: bold
+      margin: 0 8px
+
+    &__last-price
+      text-decoration: line-through
+      @include redhead-color
+      font-size: 14px
+
+    &__two-btn
+
+      margin-top: 27px
+      align-items: center
+
+    &__buy
+      @include redhead-bg
+      padding: 3px 10px
+      cursor: pointer
+      margin-right: 15px
+      text-transform: uppercase
+      align-items: center
+      border-radius: 10px
+      color: white
+      box-shadow: 1px 3px 1px #c44817
+
+    &__buy:hover
+      @include bgColor-blue
+      box-shadow: 1px 3px 1px #365884
+
+    &__buy-svg
+      margin-top: 5px
+
+    &__buy-txt
+
+    &__show-more
+      font-size: 14px
+      text-decoration: underline
+      margin-left: 15px
+
+  //========================slider-content-repeated
+
+
+  .this-counter-box
+    cursor: default
+
+    .carousel
+
+      &__item-wrapper
+
+      &__item
+        max-height: 500px
+        padding: 0
+        width: 244px
+
+      &__item:hover
+        border: 2px solid #d6d6db
+
+
+      &__wrapper-img
+        position: relative
+        right: 2px
+        width: 248px
+
+      &__img
+        width: 100%
+
+
+      &__title
+        height: 20px
+        margin: 20px 0 14px 15px
+        font-size: 16px
+        cursor: default
+
+      &__title:hover
+        @include text-colorBlue
+
+      &__subtitle
+        font-size: 13px
+        font-weight: bold
+        margin: 20px
+
+      &__wrapper-show-more
+        display: flex
+        justify-content: center
+
+      &__show-more
+        margin: 12px 0
+        padding: 0
+
+
+      //======================COUNTER
+      &__count-wrapper
+
+      &__count-box
+
+        @include gray-Bg
+        padding: 18px 20px
+        width: 206px
+        position: relative
+        right: 1px
+
+      &__validity-txt
+        font-size: 13px
+        width: 75px
+        margin-right: 5px
+
+
+      &__counter
+
+      &__time-wrapper
+
+      &__time
+        font-size: 14px
+
+      &__time-txt
+        font-size: 11px
+        @include gray-color
+
+      //======================Infinity
+      .Infinity
+        display: none
+        color: #337500
+        font-size: 16px
+        text-transform: uppercase
+        margin: 6px 0 0 18px
+
+    .carousel__item-wrapper:nth-child(2)
+      .carousel__counter
+        display: none
+
+      .Infinity
+        display: block
+
+
+.buying-right-now
+  &__wrapper-item
+    justify-content: space-between
+
+  &__title
+    max-width: 270px
+
+  &__wrapper-img
+    display: flex
+    justify-content: center
+
+  &__img
+    width: 160px
+
+  .slider-content-repeated__title
+    min-width: 320px
+
+//=====================================brands
+.brands
+  &__wrapper-item
+
+  &__item
+    max-width: 1140px
+
+  .slider-content-repeated__title
+    min-width: 270px
+
+//===================================advantage
+.advantage
+  @include gray-Bg
+  border-radius: 10px
+
+  &__wrapper-item
+    justify-content: space-evenly
+
+  &__item
+    align-items: center
+
+  &__circle
+    background-color: white
+    width: 100px
+    height: 95px
+    border-radius: 50px
+    display: flex
+    justify-content: center
+
+
+  &__svg
+    margin: 25px 0 0 15px
+
+
+  &__txt
+    text-align: center
+    font-size: 12px
+    max-width: 150px
+    font-weight: bold
+
+  .margin-left20-top22
+    margin: 22px 0 0 20px
+
+  .margin-left18-top18
+    margin: 18px 0 0 18px
+
+  .margin-left27
+    margin-left: 27px
+
+
+  .slider-content-repeated__title
+    width: 280px
+
+  .ROW
+    background-color: white
+
+
+//=========================about-company
+.about-company
+  &__wrapper-item
+    justify-content: space-evenly
+    align-items: center
+
+  &__item
+    max-width: 510px
+    height: 368px
+    border-radius: 10px
+
+  &__title
+    padding: 20px 0
+    background-color: #cb0b13
+    font-size: 15px
+    border-radius: 9px 9px 0 0
+    width: 512px
+    height: 35px
+    position: relative
+    right: 1px
+    bottom: .5px
+
+  &__svg
+    margin-left: 25px
+    margin-top: 5px
+
+  &__txt
+    margin-left: 10px
+    max-width: 430px
+    color: white
+
+  &__list-benefit
+    margin-left: 20px
+
+
+  &__benefit
+    margin: 20px 0
+    font-size: 15px
+
+    span
+      color: black
+
+
+  .marginTop
+    margin-top: 3px
+
+  .redBorder
+    border: 2px solid #f6bdbf
+
+    .redBg
+      background-color: #cb0b13
+
+    li
+      color: red
+
+  .greenBorder
+    border: 2px solid #9bd1a6
+
+    .greenBg
+      background-color: #16a333
+
+    li
+      color: green
+
+      .about-company__txt
+        margin-top: 5px
+
+  .slider-content-repeated__title
+    min-width: 370px
+
+
+//====================================info-number-company
+.info-number-company
+  &__wrapper-item
+    justify-content: space-around
+
+  &__item
+    align-items: center
+
+  &__item:nth-child(2)
+    .info-number-company__circle
+      .info-number-company__circle-content
+        color: #394a5c
+
+  &__item:nth-child(4)
+    .info-number-company__circle
+      .info-number-company__circle-content
+        color: #394a5c
+
+  &__item:nth-child(6)
+    .info-number-company__circle
+      .info-number-company__circle-content
+        color: #394a5c
+
+  &__circle
+    width: 140px
+    height: 140px
+    border: 3px solid #eaecf1
+    border-radius: 50%
+    @include redhead-color
+
+  &__circle-content
+    text-align: center
+    position: relative
+    left: 10px
+    top: 33px
+    font-weight: bold
+    font-size: 54px
+
+  &__txt
+    font-size: 12px
+    max-width: 120px
+    text-align: center
+
+  .oneNum
+    font-size: 80px
+    text-align: center
+    position: relative
+    left: 23px
+    top: 18px
+
+  .x100
+    font-size: 32px
+    text-align: center
+    position: relative
+    bottom: 20px
+    right: 8px
+
+  .marginLeft22
+    margin-left: 22px
+
+  .ROW
+    width: 980px
+
+//===========================work-instruction
+.work-instruction
+  &__direction
+    align-items: center
+
+  &__title-direction
+    text-transform: uppercase
+    font-size: 15px
+
+  &__info-btn
+    text-transform: uppercase
+    @include gray-Bg
+    @include redhead-color
+    //border-bottom: 1px dashed #ff5816
+    text-decoration: underline
+    border-radius: 10px
+    padding: 7px 15px
+    margin: 0 10px
+    cursor: help
+
+  &__work-steps
+    align-items: center
+
+  &__work-steps-item
+    font-size: 15px
+    max-width: 250px
+
+  &__svg-row
+    margin: 0 10px 10px 20px
+  //position: relative
+  //bottom: 10px
+  &__info-box
+    justify-content: space-between
+    border-top: 1px solid rgb(214, 214, 219)
+
+
+  &__info-txt
+    font-size: 15px
+    max-width: 510px
+
+
+  .marginTop15
+    margin-top: 15px
+
+  .redhead-color
+    @include redhead-color
+    text-decoration: underline
+    cursor: pointer
+
+  .slider-content-repeated__title
+    min-width: 230px
+
+
+
+//==============================bot
+.bot
+  color: #abbac6
+  background-color: #5c7489
+
+  &__wrapper
+    display: flex
+    justify-content: center
+  &__address
+    font-size: 13px
+  &__nav
+  font-size: 13px
+  .top-bar__logo-wrapper
+    color: black
+  .top-bar__subtitle-logo
+    color: #abbac6
+  .q
+    margin: 0 51px
+
+
+
+//==============================footer
+
+.footer
+  background-color: #2c3f53
+  justify-content: space-evenly
+  align-items: center
+
+  &__item
+    margin-left: 20px
+    color: white
+    max-width: 800px
+    font-size: 11px
+
+  &__item
+    svg
+      margin-top: 10px

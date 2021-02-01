@@ -1,0 +1,1629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>oneMoreTaskTest</title>
+</head>
+<body>
+<div class="header">
+    <!--header__menu-list-->
+    <div class="header__menu-list row">
+        <a class="header__links">Каталог</a>
+        <a class="header__links">О компании </a>
+        <a class="header__links">Оплата и доставка</a>
+        <a class="header__links">Гарантии и возврат</a>
+        <a class="header__links">Сотрудничество</a>
+        <a class="header__links">Услуги</a>
+        <a class="header__links">Решения</a>
+        <a class="header__links">Техподдержка</a>
+        <a class="header__links">Контакты</a>
+    </div>
+    <!--/header__menu-list-->
+</div>
+<!--page-->
+<div class="page">
+    <!--personal-info row-->
+    <div class="personal-info row">
+        <div class="personal-info__region">
+            Ваш регион: <span class="personal-info__region-set txt-color-blue">Москва</span>
+        </div>
+        <div class="personal-info__personal-area row">
+            <div class="personal-info__entrance txt-color-blue">Войти</div>
+            <div class="personal-info__registration txt-color-blue">Регистрация</div>
+        </div>
+    </div>
+    <!--/personal-info row-->
+
+    <!--top-bar-->
+    <!--//TODO - переписать стили-->
+    <div class="top-bar row">
+        <!--top-bar__logo-->
+        <div class="top-bar__logo column">
+            <div>HO<span class="redhead">MY</span>RU</div>
+            <div class="top-bar__subtitle-logo">
+                борудование и решение для VOIP
+            </div>
+        </div>
+        <!--/top-bar__logo-->
+        <!--top-bar__feedback-->
+        <div class="top-bar__feedback column">
+            <a href="tel:84952554466" class="top-bar__number-phone">+7 495 2-55-44-66</a>
+            <div class="top-bar__operating-mode">(пн-пт с 9 до 18 ч)</div>
+            <div class="top-bar__social row">
+                <div class="top-bar__wh">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.564cm" height="0.564cm">
+                        <image x="0px" y="0px" width="16px" height="16px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEXX8NnI68uc2qKU2JvB6MTP7dLK683C6MXc8d3U7tbU7Nev4LbS69WBzI2t37ST25mB14mE14px1Xtm03Bl0m9w1HiC14uC14qM2JKZ2Z+K2JBi0Wxh0myD14uR2JjP7NF1035v0nnH6svF6cih4KeZ3qC85sGk3qlTymBSy1+c3KKM2JSA1YlfzGtZymZJxFlJxFhEwlREw1VPxF9Jw1p2zoJoynWw37Y5vEwntz2p3bDZ7NtmyHR3z4TV7Ni74sFUwmVPwGCz4bqo3LAvt0VCu1UttkMktDpZwmmEzo+237x1yIJrxnhkxHOAy4tRvmI2t0sqtEA0uElOvmB7y4eP0JhY0WNa0WZc0mhX0WRMzFlLy1hTzWBa0Gdaz2Zaz2dbz2ZYz2RQzV1IyVRZzmWT3pt11n9SzGBWzWNWzWRXzWRWzmNLzFlGx1Se4KX//v/S79VWzGNOylxSy2BTy2BUzGE7xExWy2TR8NT////+/v9+1olHxlZNyVxOyV1PyV1RyV5Ex1M+xE9Px17I7c7z+vVzz39DxFRKx1lLx1pKx1pExFQ7wEyY3aHG6stEwlRBw1BHxVZGxVZExFVFxVVGxFZFxFVCwlM5wEtJw1nL7c+G15E2vkg9wU87wE08wE1Bw1JBwlI5vks/wFEvu0JeyGzi9eSN2Zc7v05NxV2u5LaO2ZhGw1g7v0wsukE7vk06vkwpuDxkynLc8+DC6sjA6MZBwFMnuDwyukU3u0k1vEkktjpPw2G35b2z4rkyuEYltjoyukcyuUYyukYjtTkrt0FZxGmQ1pqq37GU1p1Au1IZsTAgtDYotj4rtkAuuEMuuEQntj0esjYisjgptD4gsTYUrywotD4gsjcmtD0qtj8qtkAktDobsTQVvf9UAAAAVnRSTlMAAAAAAAAAAAAAAAAAAAABJG+00tK2dCgCCm/q8HcMCJSdCgF1gQEo8PUufo/F0OLj4+TM1IuaMu/9OgWilgMKsrUULOnI8v6UFyBTIRA2lM/k0Zg7B9C5b1sAAAABYktHRHmh3NTQAAAAB3RJTUUH5QEYEw8vELlK7gAAARtJREFUGNMBEAHv/gAAAQIPEBESExQVFhcYAwQFAAAGGRobVldYWFdZHB0eBwUACB8gWltcXV5eX2BhYiEiCQAjJGNkZWZnaGlqa2pobCUmACcobW5vcHFyc3RndHVyKSoAK3Z3eHl6e3x9fn5+f4CBLAAtgoOEeYWGh4iJiomKinwuAC+LjI15jo+QkZKTlJKVljAAMZeYmZp5m5yMnZ2en6ChMgAzoqOkpaZ5p6ipqqusnq00ADWur7CxsrN5mrR5ebW2tzYANzi4ubq7vL2FeXl5vr85OgA7PMDBwsPExcbHyMnKyz0+AD9AzM3Oz9DR0tPU1dZBQgoAQ9dERUbY2drb3N1HSEkLDABKS0xNTk9QUVFSU1RVDQ4MKx9uqQwjmGwAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+                <div class="top-bar__viber">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.564cm" height="0.635cm">
+                        <image x="0px" y="0px" width="16px" height="18px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACoFBMVEXu6PLYzOG9qM3l3uvv6fLm3+vSxd3PwNnZzePRxNzQwdrWyt/Xy+HWy+Hf1ueznMadf7XOvtjVyN7c0+Xd1OXk3OqDXqKLZ6iRbayaerOkh7uxmsXYzuLYzeLo4+60nseDXaGRcK2rkcCVcq6HYqaAWKB9VJ5+VZ6AV5+KZaeXdrGqkL+LZ6jTxd2GYKWBWaG5pMrl2+uPbKyIYqXd0+W1nsiwl8SVdLCPbKqGX6SDXaJ/Vp+AVp99VJ1/VZ99U52AWKGBWKCEXaOQbqyTcq6zm8avl8O/q86OaqqMZ6m4o8nHttWHYqV1SZh2SpiLZ6jFs9KYeLGwlsR/Vp6HZKaIY6aLZaePa6qYd7Knjb6df7XQwduHYaWpj76FYaSMaKiSbq2bfLSmibzHt9Wrj7+qkb/a0OTHttWkibvp4+91SZhzR5d3TJl7UJt8U519VJ55T5t2Sph3TJpwQ5SAV5+Sb619VZ5zRpaSbqy4oMmvl8SRb616T5t1SJdwRJR/V5/JuNf7+fyznMZuQJJ/Vp+fgbexmcXDr9Glibx6UJtzR5ZxRJWYd7L////z7/ZvQZOfgri6pMuvlsPCrtF6Tpp1SpiKZajw6vT49vmtlMFpOo+zm8a6o8y1nce2n8h/VZ55Tpp2S5m5ocvRw9x4TZqWdbGqkMCtlMLArdCHYqZ6UJyIYqXw6/Pd0eZ8U5yLZ6irkL+JZKd7UZxzSJeqjr+7psxsPZBtP5F1SZdsPpF8UZx+VJ53S5nBrtH+/f6/qs6FXqOwmMTRxN2ihLlyRZZ5TZp5T5p1Spe8p8z9/f7t5/H49vry7vWulMN7UZ2hhLnf1efEstNwQpNxRZZ8Upx4TZlyRpWBWaGqj7/WyuHLu9iIY6Z6UZtxRJR7UZt2S5hdg46ZAAAAanRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOSI7A2eLg1b2NSw8rv804EcfYGFxpp7DQ1d/g5OPk3dnRtLJkZBTIyRQqsv7+rSkVcO69wLWbbDYUR+ROFBQSDQNWZwIBR4IEw8Vr2wAAAAFiS0dEjRsM4tUAAAAHdElNRQflARgTEChDh9HTAAABPUlEQVQY0wEyAc3+AAABISIjJCUmJygpKissAgMABC0uamtsbW5vcHFxci8wBQAxMnN0dXZ3eHl6e3xwfTM0ADV+f4CBgoOEhYaHiG2JijYAN4uMjY2OjI+QkZKTjJRxOAA5lZaXjZiZmnubnJ2en2w6ADugoaKNo2yki6Wmp6ippDwAPaqVq6yta4pubK6vsLFwPgA/snyztI21tre4bLm6u3xAAEF8snK8vb6/wMHCw8TFxkIAQ6GyusdsyMnKy43MzXx9RABFi86ysmpqz9CNjY3RcNJGAEdI06qy1NXW19jZ2tuPSUoABktMTdyyxqGL3d6kTk9QBwAICVFSpN9TVFVWV1hZWgoLAAwNDlvSXF1eX2BhYg8QERIAExQVY3JkZRYXGBkaGxAREgAcHWZnaGkeHyAYGRobEBESVbB/thfk5ucAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+                <a href="tel:89031111111" class="top-bar__social-number-phone">
+                    +7 903 111-11-11
+                </a>
+            </div>
+            <a href="mailto:info@homy.ry" class="top-bar__email">info@homy.ry</a>
+        </div>
+        <!--/top-bar__feedback-->
+        <!--top-bar__search-->
+        <div class="top-bar__search column">
+            <div class="top-bar__search row">
+                <div class="top-bar__ruble-symbol">₽</div>
+                <div class="txt">
+                    <div class="top-bar__search-title">VOIP РЕШЕНИЕ</div>
+                    <div class="top-bar__search-subtitle">для экономных людей</div>
+                </div>
+            </div>
+            <div class="top-bar__search">
+                <div class="row border-radius">
+                    <label>
+                        <input class="top-bar__input" type="text" placeholder="Поиск по сайту">
+                    </label>
+                    <button class="top-bar__btn">ИСКАТЬ</button>
+                </div>
+            </div>
+        </div>
+        <!--/top-bar__search-->
+        <!--top-bar__pannier-->
+        <div class="top-bar__pannier column">
+            <div class="top-bar__pannier-item row">
+                <div class="top-bar__svg">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.917cm" height="0.776cm">
+                        <path fill-rule="evenodd" fill="rgb(255, 88, 22)"
+                              d="M25.231,8.358 L22.636,15.993 C22.636,15.993 22.424,17.127 21.327,17.127 L8.234,17.127 C6.929,17.127 6.873,15.703 6.873,15.703 L5.232,3.501 L1.017,2.436 C0.383,2.276 -0.000,1.636 0.162,1.008 C0.324,0.379 0.969,0.000 1.603,0.160 L6.600,1.423 C7.071,1.542 7.421,1.935 7.483,2.413 L8.233,8.460 L9.019,14.667 L20.864,14.667 L21.480,12.610 L11.551,12.606 C11.009,12.606 10.569,12.171 10.569,11.634 C10.569,11.097 11.009,10.662 11.551,10.662 L22.062,10.660 L22.717,8.461 L12.379,8.462 C11.795,8.462 11.321,7.992 11.321,7.413 C11.321,6.835 11.795,6.365 12.379,6.365 L24.064,6.366 C26.000,6.366 25.231,8.358 25.231,8.358 ZM9.559,17.821 C10.724,17.821 11.668,18.756 11.668,19.910 C11.668,21.065 10.724,22.000 9.559,22.000 C8.394,22.000 7.449,21.065 7.449,19.910 C7.449,18.756 8.394,17.821 9.559,17.821 ZM18.765,17.821 C19.930,17.821 20.875,18.756 20.875,19.910 C20.875,21.065 19.930,22.000 18.765,22.000 C17.600,22.000 16.655,21.065 16.655,19.910 C16.655,18.756 17.600,17.821 18.765,17.821 Z"/>
+                    </svg>
+                </div>
+                <div class="top-bar__list">
+                    <div class="top-bar__title">корзина</div>
+                    <div class="top-bar__subtitle">
+                        <span class="top-bar__quantity">4</span> / <span class="top-bar__price">4000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-bar__likes row">
+                <div class="favorites row">
+                    <svg class="svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="0.529cm" height="0.459cm">
+                        <path fill-rule="evenodd" fill="rgb(198, 81, 122)"
+                              d="M12.809,0.529 C12.202,0.193 11.505,-0.000 10.763,-0.000 C9.451,-0.000 8.277,0.600 7.501,1.542 C6.722,0.600 5.549,-0.000 4.236,-0.000 C3.495,-0.000 2.799,0.193 2.191,0.529 C0.885,1.256 0.000,2.654 0.000,4.260 C0.000,4.719 0.075,5.160 0.209,5.573 C0.936,8.858 7.501,13.000 7.501,13.000 C7.501,13.000 14.062,8.858 14.790,5.573 C14.925,5.160 15.000,4.719 15.000,4.260 C15.000,2.654 14.115,1.257 12.809,0.529 Z"/>
+                    </svg>
+                    <div class="favorites__txt">Избранное <span>7</span></div>
+                </div>
+                <div class="comparison row">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.529cm" height="0.706cm">
+                        <path fill-rule="evenodd" fill="rgb(73, 156, 84)"
+                              d="M0.117,10.698 C0.000,9.643 0.097,8.625 0.362,7.685 C1.242,4.558 4.001,2.259 7.274,2.218 L7.274,0.174 C7.274,0.061 7.411,0.000 7.500,0.069 L11.536,3.159 C11.602,3.212 11.602,3.317 11.536,3.366 L7.504,6.456 C7.411,6.525 7.278,6.464 7.278,6.350 L7.278,4.311 C5.126,4.347 3.289,5.730 2.499,7.685 C2.199,8.423 2.047,9.238 2.090,10.093 C2.148,11.269 2.573,12.352 3.242,13.228 C3.600,13.694 3.515,14.375 3.051,14.728 C2.612,15.065 1.997,14.972 1.658,14.526 C0.829,13.447 0.276,12.133 0.117,10.698 ZM11.770,6.772 C12.443,7.644 12.867,8.731 12.922,9.907 C12.964,10.767 12.809,11.582 12.513,12.315 C11.723,14.270 9.886,15.657 7.734,15.689 L7.734,13.650 C7.734,13.536 7.597,13.476 7.508,13.545 L3.472,16.634 C3.406,16.687 3.406,16.793 3.472,16.841 L7.504,19.931 C7.597,20.000 7.730,19.939 7.730,19.826 L7.730,17.782 C11.003,17.745 13.766,15.446 14.642,12.315 C14.907,11.375 15.000,10.357 14.887,9.303 C14.731,7.867 14.179,6.553 13.350,5.475 C13.007,5.029 12.396,4.935 11.956,5.272 C11.497,5.625 11.412,6.306 11.770,6.772 Z"/>
+                    </svg>
+                    <div class="comparison__txt">Сравнение <span>2</span></div>
+                </div>
+            </div>
+        </div>
+        <!--/top-bar__pannier-->
+    </div>
+    <!--/top-bar-->
+
+    <!--catalog-->
+    <div class="catalog row">
+        <div class="catalog__item">VOIP ОБОРУДОВАНИЕ</div>
+        <div class="catalog__item">SKYPE ОБОРУДОВАНИЕ</div>
+        <div class="catalog__item">GSM ОБОРУДОВАНИЕ</div>
+        <div class="catalog__item">ВИДЕО- ОБОРУДОВАНИЕ</div>
+        <div class="catalog__item">РАДИО И DECT ТЕЛЕФОНЫ</div>
+        <div class="catalog__item">ГАРНИТУРЫ</div>
+        <div class="catalog__item">ЭЛЕКТРОННЫЕ ЗАМКИ</div>
+        <div class="catalog__item">ДОМОФОННЫЕ СИСТЕМЫ</div>
+        <div class="catalog__item">СИСТЕМЫ ЗАПИСИ ТЕЛЕФОННЫХ РАЗГОВОРОВ</div>
+        <div class="catalog__item">СЕТЕВОЕ ОБОРУДОВАНИЕ</div>
+    </div>
+    <!--/catalog-->
+
+    <!--promo-->
+    <div class="promo row">
+        <div class="news column txt-bold">
+            <span>Новости компании</span>
+            <div class="news__box column">
+
+                <div class="news__item row">
+                    <div class="news__picture column">
+                        <img class="news__img" src="img/Rounded%20Rectangle%203.png" alt="new-img">
+                        <div class="news__date column">
+                            <div class="news__number">01</div>
+                            <div class="news__month">month</div>
+                        </div>
+                    </div>
+                    <div class="news__txt-content column">
+                        <div class="news__title txt-color-blue">Новинка от «Элтекс» - точка доступа WEP-2ac</div>
+                        <div class="news__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            cumque...
+                        </div>
+                    </div>
+                </div>
+                <div class="news__item row">
+                    <div class="news__picture column">
+                        <img class="news__img" src="img/Rounded%20Rectangle%203.png" alt="new-img">
+                        <div class="news__date column">
+                            <div class="news__number">01</div>
+                            <div class="news__month">month</div>
+                        </div>
+                    </div>
+                    <div class="news__txt-content column">
+                        <div class="news__title txt-color-blue">Новинка от «Элтекс» - точка доступа WEP-2ac</div>
+                        <div class="news__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            cumque...
+                        </div>
+                    </div>
+                </div>
+                <div class="news__item row">
+                    <div class="news__picture column">
+                        <img class="news__img" src="img/Rounded%20Rectangle%203.png" alt="new-img">
+                        <div class="news__date column">
+                            <div class="news__number">01</div>
+                            <div class="news__month">month</div>
+                        </div>
+                    </div>
+                    <div class="news__txt-content column">
+                        <div class="news__title txt-color-blue">Новинка от «Элтекс» - точка доступа WEP-2ac</div>
+                        <div class="news__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            cumque...
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="show-more txt-color-blue">
+                Все новости
+            </div>
+        </div>
+        <div class="promo__content">
+            <div class="promo__banner"><span class="txt-bold">Более 2000 товаров</span><span class="txt-italic"> от 40+ производителей в одном магазине.</span><span
+                    class="txt-color-blue"> Любые решения под ключ.</span></div>
+            <div class="carousel">
+                <div class="carousel__line row">
+                    <div class="carousel__item"><img src="img/9-q.png" alt="img" class="carousel__img"></div>
+                    <div class="carousel__item"><img src="img/9-q.png" alt="img" class="carousel__img"></div>
+                    <div class="carousel__item"><img src="img/9-q.png" alt="img" class="carousel__img"></div>
+                </div>
+                <div class="carousel__wrapper-btn row">
+                    <div class="carousel__btn prev">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.564cm" height="1.552cm">
+                            <path fill-rule="evenodd" fill="rgb(255, 88, 22)"
+                                  d="M16.000,41.944 L12.610,44.000 L0.000,22.221 L1.159,22.000 L0.000,21.779 L12.610,-0.000 L16.000,2.056 L7.006,22.000 L16.000,41.944 Z"/>
+                        </svg>
+                    </div>
+                    <div class="carousel__btn next">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.564cm" height="1.552cm">
+                            <path fill-rule="evenodd" fill="rgb(255, 88, 22)"
+                                  d="M16.000,22.221 L3.390,44.000 L0.000,41.944 L8.994,22.000 L0.000,2.056 L3.390,-0.000 L16.000,21.779 L14.841,22.000 L16.000,22.221 Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/promo-->
+
+    <!--slider content repeated-->
+    <div class="slider-content-repeated column">
+        <!--slider-content-repeated__item-->
+        <div class="slider-content-repeated__item">
+
+            <div class="slider-content-repeated__txt-list row">
+                <span class="slider-content-repeated__title">Новинки</span>
+                <div class="ROW"></div>
+                <span class="show-more txt-color-blue">Все новинки</span>
+            </div>
+
+            <!--carousel-->
+            <div class="carousel row">
+                <!--carousel__line-->
+                <div class="carousel__line row">
+
+                    <!--carousel__item-->
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9CwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxPxXb////Z8+LA6s7m9+vy+/Wa3rGB1p2n4rrN7th00pNbyYCz5sRozYmO2qfVlqElAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0AJgzfJklsAAABDUlEQVQ4y+3R2VbCMBAG4BlFcRdFFFdU3CdDTdoE5f0fzBkKmHBaeuGN5+hc9GT5kj9JYW2dVlZrAxqEGGgSRP/kTxHDI/1k9M5SmbVEGRtynEdEOkosu6LIvUzriLKIcEmsdh2HMU8XxEEZf1C5i3Pmk92ErTXsYxI8hymRkhTvbc4TdjHJNUuDjJH8kbQNWx4nhApenEXbQXeklMiQBhVyIwqalulLpGRxFl++U5gd5ff9xp+TzSbRBtjaXgV2dkFqb79eHBxCWZ2jmi2OYV7YPelViNMz+CaI/fNlcHEJkBDstlNxdQ3LBPEmulprAFBB8Hb+Rr27e6gmiIOhioc+QC3Bx6fnl9e3dPYL/uja8zGHOGQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9CwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxPxXb////Z8+LA6s7m9+vy+/Wa3rGB1p2n4rrN7th00pNbyYCz5sRozYmO2qfVlqElAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0AJgzfJklsAAABDUlEQVQ4y+3R2VbCMBAG4BlFcRdFFFdU3CdDTdoE5f0fzBkKmHBaeuGN5+hc9GT5kj9JYW2dVlZrAxqEGGgSRP/kTxHDI/1k9M5SmbVEGRtynEdEOkosu6LIvUzriLKIcEmsdh2HMU8XxEEZf1C5i3Pmk92ErTXsYxI8hymRkhTvbc4TdjHJNUuDjJH8kbQNWx4nhApenEXbQXeklMiQBhVyIwqalulLpGRxFl++U5gd5ff9xp+TzSbRBtjaXgV2dkFqb79eHBxCWZ2jmi2OYV7YPelViNMz+CaI/fNlcHEJkBDstlNxdQ3LBPEmulprAFBB8Hb+Rr27e6gmiIOhioc+QC3Bx6fnl9e3dPYL/uja8zGHOGQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9CwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxPxXb////Z8+LA6s7m9+vy+/Wa3rGB1p2n4rrN7th00pNbyYCz5sRozYmO2qfVlqElAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0AJgzfJklsAAABDUlEQVQ4y+3R2VbCMBAG4BlFcRdFFFdU3CdDTdoE5f0fzBkKmHBaeuGN5+hc9GT5kj9JYW2dVlZrAxqEGGgSRP/kTxHDI/1k9M5SmbVEGRtynEdEOkosu6LIvUzriLKIcEmsdh2HMU8XxEEZf1C5i3Pmk92ErTXsYxI8hymRkhTvbc4TdjHJNUuDjJH8kbQNWx4nhApenEXbQXeklMiQBhVyIwqalulLpGRxFl++U5gd5ff9xp+TzSbRBtjaXgV2dkFqb79eHBxCWZ2jmi2OYV7YPelViNMz+CaI/fNlcHEJkBDstlNxdQ3LBPEmulprAFBB8Hb+Rr27e6gmiIOhioc+QC3Bx6fnl9e3dPYL/uja8zGHOGQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9CwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxCwWxPxXb////Z8+LA6s7m9+vy+/Wa3rGB1p2n4rrN7th00pNbyYCz5sRozYmO2qfVlqElAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0AJgzfJklsAAABDUlEQVQ4y+3R2VbCMBAG4BlFcRdFFFdU3CdDTdoE5f0fzBkKmHBaeuGN5+hc9GT5kj9JYW2dVlZrAxqEGGgSRP/kTxHDI/1k9M5SmbVEGRtynEdEOkosu6LIvUzriLKIcEmsdh2HMU8XxEEZf1C5i3Pmk92ErTXsYxI8hymRkhTvbc4TdjHJNUuDjJH8kbQNWx4nhApenEXbQXeklMiQBhVyIwqalulLpGRxFl++U5gd5ff9xp+TzSbRBtjaXgV2dkFqb79eHBxCWZ2jmi2OYV7YPelViNMz+CaI/fNlcHEJkBDstlNxdQ3LBPEmulprAFBB8Hb+Rr27e6gmiIOhioc+QC3Bx6fnl9e3dPYL/uja8zGHOGQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/carousel__item-->
+
+                </div>
+                <!--/carousel__line-->
+            </div>
+            <!--/carousel-->
+
+        </div>
+        <div class="slider-content-repeated__item">
+
+            <div class="slider-content-repeated__txt-list row">
+                <span class="slider-content-repeated__title">Рекомендуем</span>
+                <div class="ROW"></div>
+                <span class="show-more txt-color-blue">Все рекомендации</span>
+            </div>
+
+            <!--carousel-->
+            <div class="carousel row">
+                <!--carousel__line-->
+                <div class="carousel__line row">
+
+                    <!--carousel__item-->
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX////3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn4xmf98dn//fr+9OL62pv85rv////97c7+9+r62Zn++e7+9OH3xGD++vH98974ynL747X97c///fj857/50YX98Nb/+/X73aT97Mz3wVr//vv97tP51Iz//v398tz3w2D73qf979X74rL62534xWP5z334yGv989/++O34ynD++Oz++/T//vz//Pf5zn33xWP4xWT62Jf979T//fn86ML4zHf97tH3wlz+9uj625/74Kv5z3773aP73aX61pD3w1/++/X+9eX5z3/51Iv///7504r5zXr3xGL73qb98dv4x2n3w173xGH615P73KL+9+n97tL86MH85r386cT747P3wl350oX75LX6257n7agaAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XNhZx7xeyAAABXklEQVQ4y+XRZ1MCMRAG4ERR7A1RrNhbEM71LKBiAxQU7AJ6ImJXwN57+eFyODJHvLv43fdLkpknu5MNysgkqtFkIYZIGMQShPwHYuo2Wzh10gO9PPSpkv4BMmi1qZEhGCZkxK5GRmGMkPEJFTIJDicxuaaUybTbM0PILHh9vrl5WbJgty4mliUQs7xCEW7V7/cHgmvifl0QBNOGO0SRTfFieEtSMmKmSLK2tOn2Ds8iu7DHIvtwwCKHcMQiXjhmkVCUHh3E4jEpOTkN/yL8GQ/nFylyCXGaXCU7BSLcdfJ44wkINLm94zju3hEEeHh8en7h4VXhp8nb+4ctCuCyfDqViEz+QrJZQotQTq4ayMtHiRQUKouiYvSdklKFEmUoFV25XkZUVCJpDFU0qK7BOI0gnTZd1NZhmiBUL3maxoixDEENPzPSNzZheYKQsVkULQaMFQlubWvv6OzCaeQLc53tU8Z+ysUAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX////3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn4xmf98dn//fr+9OL62pv85rv////97c7+9+r62Zn++e7+9OH3xGD++vH98974ynL747X97c///fj857/50YX98Nb/+/X73aT97Mz3wVr//vv97tP51Iz//v398tz3w2D73qf979X74rL62534xWP5z334yGv989/++O34ynD++Oz++/T//vz//Pf5zn33xWP4xWT62Jf979T//fn86ML4zHf97tH3wlz+9uj625/74Kv5z3773aP73aX61pD3w1/++/X+9eX5z3/51Iv///7504r5zXr3xGL73qb98dv4x2n3w173xGH615P73KL+9+n97tL86MH85r386cT747P3wl350oX75LX6257n7agaAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XNhZx7xeyAAABXklEQVQ4y+XRZ1MCMRAG4ERR7A1RrNhbEM71LKBiAxQU7AJ6ImJXwN57+eFyODJHvLv43fdLkpknu5MNysgkqtFkIYZIGMQShPwHYuo2Wzh10gO9PPSpkv4BMmi1qZEhGCZkxK5GRmGMkPEJFTIJDicxuaaUybTbM0PILHh9vrl5WbJgty4mliUQs7xCEW7V7/cHgmvifl0QBNOGO0SRTfFieEtSMmKmSLK2tOn2Ds8iu7DHIvtwwCKHcMQiXjhmkVCUHh3E4jEpOTkN/yL8GQ/nFylyCXGaXCU7BSLcdfJ44wkINLm94zju3hEEeHh8en7h4VXhp8nb+4ctCuCyfDqViEz+QrJZQotQTq4ayMtHiRQUKouiYvSdklKFEmUoFV25XkZUVCJpDFU0qK7BOI0gnTZd1NZhmiBUL3maxoixDEENPzPSNzZheYKQsVkULQaMFQlubWvv6OzCaeQLc53tU8Z+ysUAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX////3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn4xmf98dn//fr+9OL62pv85rv////97c7+9+r62Zn++e7+9OH3xGD++vH98974ynL747X97c///fj857/50YX98Nb/+/X73aT97Mz3wVr//vv97tP51Iz//v398tz3w2D73qf979X74rL62534xWP5z334yGv989/++O34ynD++Oz++/T//vz//Pf5zn33xWP4xWT62Jf979T//fn86ML4zHf97tH3wlz+9uj625/74Kv5z3773aP73aX61pD3w1/++/X+9eX5z3/51Iv///7504r5zXr3xGL73qb98dv4x2n3w173xGH615P73KL+9+n97tL86MH85r386cT747P3wl350oX75LX6257n7agaAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XNhZx7xeyAAABXklEQVQ4y+XRZ1MCMRAG4ERR7A1RrNhbEM71LKBiAxQU7AJ6ImJXwN57+eFyODJHvLv43fdLkpknu5MNysgkqtFkIYZIGMQShPwHYuo2Wzh10gO9PPSpkv4BMmi1qZEhGCZkxK5GRmGMkPEJFTIJDicxuaaUybTbM0PILHh9vrl5WbJgty4mliUQs7xCEW7V7/cHgmvifl0QBNOGO0SRTfFieEtSMmKmSLK2tOn2Ds8iu7DHIvtwwCKHcMQiXjhmkVCUHh3E4jEpOTkN/yL8GQ/nFylyCXGaXCU7BSLcdfJ44wkINLm94zju3hEEeHh8en7h4VXhp8nb+4ctCuCyfDqViEz+QrJZQotQTq4ayMtHiRQUKouiYvSdklKFEmUoFV25XkZUVCJpDFU0qK7BOI0gnTZd1NZhmiBUL3maxoixDEENPzPSNzZheYKQsVkULQaMFQlubWvv6OzCaeQLc53tU8Z+ysUAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX////3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn3wVn4xmf98dn//fr+9OL62pv85rv////97c7+9+r62Zn++e7+9OH3xGD++vH98974ynL747X97c///fj857/50YX98Nb/+/X73aT97Mz3wVr//vv97tP51Iz//v398tz3w2D73qf979X74rL62534xWP5z334yGv989/++O34ynD++Oz++/T//vz//Pf5zn33xWP4xWT62Jf979T//fn86ML4zHf97tH3wlz+9uj625/74Kv5z3773aP73aX61pD3w1/++/X+9eX5z3/51Iv///7504r5zXr3xGL73qb98dv4x2n3w173xGH615P73KL+9+n97tL86MH85r386cT747P3wl350oX75LX6257n7agaAAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XNhZx7xeyAAABXklEQVQ4y+XRZ1MCMRAG4ERR7A1RrNhbEM71LKBiAxQU7AJ6ImJXwN57+eFyODJHvLv43fdLkpknu5MNysgkqtFkIYZIGMQShPwHYuo2Wzh10gO9PPSpkv4BMmi1qZEhGCZkxK5GRmGMkPEJFTIJDicxuaaUybTbM0PILHh9vrl5WbJgty4mliUQs7xCEW7V7/cHgmvifl0QBNOGO0SRTfFieEtSMmKmSLK2tOn2Ds8iu7DHIvtwwCKHcMQiXjhmkVCUHh3E4jEpOTkN/yL8GQ/nFylyCXGaXCU7BSLcdfJ44wkINLm94zju3hEEeHh8en7h4VXhp8nb+4ctCuCyfDqViEz+QrJZQotQTq4ayMtHiRQUKouiYvSdklKFEmUoFV25XkZUVCJpDFU0qK7BOI0gnTZd1NZhmiBUL3maxoixDEENPzPSNzZheYKQsVkULQaMFQlubWvv6OzCaeQLc53tU8Z+ysUAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/carousel__item-->
+
+                </div>
+                <!--/carousel__line-->
+            </div>
+            <!--/carousel-->
+
+        </div>
+        <div class="slider-content-repeated__item">
+
+            <div class="slider-content-repeated__txt-list row">
+                <span class="slider-content-repeated__title">Распродажа</span>
+                <div class="ROW"></div>
+                <span class="show-more txt-color-blue">Все товары</span>
+            </div>
+
+            <!--carousel-->
+            <div class="carousel row">
+                <!--carousel__line-->
+                <div class="carousel__line row">
+
+                    <!--carousel__item-->
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9JmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtnC3fL////b6/dhp97n8vrz+PxVodx6teOeyeu21/CGvOaSwuhtruHO5PWq0O1pTG16AAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XOBbvbDo8AAABHElEQVQ4y+XQ21LDIBAG4EWr9Wy1Vuuxaj0vWyCBmPb9H0w2ndgkA+TGO/+LTGb4BnZ/2NrGZAY70CO8gT6B+O+JJFqoJNFkNFGWIDktEC1J/+t0mFgqEDMmiihMJPEcTDTjEPmub7H8YpCUZBQuaYXdkRsb+Z2JjFc23kshpfWLaYyTKkQlqrxMEEdu/aKKEa5kRaZwjWo6hCsxvNGS8jCpKjGGR9/U1yJZVUmSyKqS5EPK8ZfHlfFxf2s2KkkwK1PVBfJHZLdPDAH29lPg4BB8jo7j4uQU1hmdRa44hzpifDEJiMsr2BAhptddcHML0CJiPGyLu3voEiEeGqsNZgABIh7rjiZPzxAmQszmLF6mAFEiXt/ePz6/2qc/oAra82iUHZQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9JmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtnC3fL////b6/dhp97n8vrz+PxVodx6teOeyeu21/CGvOaSwuhtruHO5PWq0O1pTG16AAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XOBbvbDo8AAABHElEQVQ4y+XQ21LDIBAG4EWr9Wy1Vuuxaj0vWyCBmPb9H0w2ndgkA+TGO/+LTGb4BnZ/2NrGZAY70CO8gT6B+O+JJFqoJNFkNFGWIDktEC1J/+t0mFgqEDMmiihMJPEcTDTjEPmub7H8YpCUZBQuaYXdkRsb+Z2JjFc23kshpfWLaYyTKkQlqrxMEEdu/aKKEa5kRaZwjWo6hCsxvNGS8jCpKjGGR9/U1yJZVUmSyKqS5EPK8ZfHlfFxf2s2KkkwK1PVBfJHZLdPDAH29lPg4BB8jo7j4uQU1hmdRa44hzpifDEJiMsr2BAhptddcHML0CJiPGyLu3voEiEeGqsNZgABIh7rjiZPzxAmQszmLF6mAFEiXt/ePz6/2qc/oAra82iUHZQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9JmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtnC3fL////b6/dhp97n8vrz+PxVodx6teOeyeu21/CGvOaSwuhtruHO5PWq0O1pTG16AAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XOBbvbDo8AAABHElEQVQ4y+XQ21LDIBAG4EWr9Wy1Vuuxaj0vWyCBmPb9H0w2ndgkA+TGO/+LTGb4BnZ/2NrGZAY70CO8gT6B+O+JJFqoJNFkNFGWIDktEC1J/+t0mFgqEDMmiihMJPEcTDTjEPmub7H8YpCUZBQuaYXdkRsb+Z2JjFc23kshpfWLaYyTKkQlqrxMEEdu/aKKEa5kRaZwjWo6hCsxvNGS8jCpKjGGR9/U1yJZVUmSyKqS5EPK8ZfHlfFxf2s2KkkwK1PVBfJHZLdPDAH29lPg4BB8jo7j4uQU1hmdRa44hzpifDEJiMsr2BAhptddcHML0CJiPGyLu3voEiEeGqsNZgABIh7rjiZPzxAmQszmLF6mAFEiXt/ePz6/2qc/oAra82iUHZQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__item-wrapper">
+                        <div class="carousel__top-icon">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.199cm" height="1.517cm">
+                                <image x="0px" y="0px" width="34px" height="43px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAArCAMAAAAqlqo4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX///9JmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtlJmtnC3fL////b6/dhp97n8vrz+PxVodx6teOeyeu21/CGvOaSwuhtruHO5PWq0O1pTG16AAAAK3RSTlMAAGH95SehnErk7VMPnrIZSOJbDpr+rxdF4epZpxVJThGdEOffEpHT0IUMuhaY8gAAAAFiS0dEAIgFHUgAAAAHdElNRQflAR0XOBbvbDo8AAABHElEQVQ4y+XQ21LDIBAG4EWr9Wy1Vuuxaj0vWyCBmPb9H0w2ndgkA+TGO/+LTGb4BnZ/2NrGZAY70CO8gT6B+O+JJFqoJNFkNFGWIDktEC1J/+t0mFgqEDMmiihMJPEcTDTjEPmub7H8YpCUZBQuaYXdkRsb+Z2JjFc23kshpfWLaYyTKkQlqrxMEEdu/aKKEa5kRaZwjWo6hCsxvNGS8jCpKjGGR9/U1yJZVUmSyKqS5EPK8ZfHlfFxf2s2KkkwK1PVBfJHZLdPDAH29lPg4BB8jo7j4uQU1hmdRa44hzpifDEJiMsr2BAhptddcHML0CJiPGyLu3voEiEeGqsNZgABIh7rjiZPzxAmQszmLF6mAFEiXt/ePz6/2qc/oAra82iUHZQAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="carousel__item column">
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20776.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__title txt-color-blue">
+                                IP телефон Siemens Gigaset C530A IP
+                            </div>
+                            <div class="carousel__cost row">
+                                <div class="carousel__txt-price">
+                                    Цена:
+                                </div>
+                                <div class="carousel__new-price">12 300 р.</div>
+                                <div class="carousel__last-price">15 500 р.</div>
+                            </div>
+                            <div class="carousel__two-btn row">
+
+                                <!--/btn-buy-->
+                                <div class="carousel__buy row">
+                                    <div class="carousel__buy-svg">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="0.706cm" height="0.6cm">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                  d="M19.408,6.459 L17.412,12.358 C17.412,12.358 17.249,13.234 16.405,13.234 L6.334,13.234 C5.330,13.234 5.287,12.134 5.287,12.134 L4.025,2.705 L0.783,1.883 C0.295,1.759 0.000,1.264 0.124,0.779 C0.249,0.293 0.745,-0.000 1.233,0.124 L5.077,1.100 C5.440,1.192 5.709,1.495 5.756,1.865 L6.333,6.537 L6.938,11.333 L16.049,11.333 L16.523,9.744 L8.885,9.741 C8.468,9.741 8.130,9.405 8.130,8.990 C8.130,8.575 8.468,8.239 8.885,8.239 L16.970,8.237 L17.475,6.538 L9.522,6.539 C9.073,6.539 8.709,6.176 8.709,5.728 C8.709,5.281 9.073,4.919 9.522,4.919 L18.511,4.920 C20.000,4.920 19.408,6.458 19.408,6.459 ZM7.353,13.771 C8.249,13.771 8.976,14.494 8.976,15.385 C8.976,16.277 8.249,17.000 7.353,17.000 C6.457,17.000 5.730,16.277 5.730,15.385 C5.730,14.494 6.457,13.771 7.353,13.771 ZM14.435,13.771 C15.330,13.771 16.057,14.494 16.057,15.385 C16.057,16.277 15.330,17.000 14.435,17.000 C13.538,17.000 12.812,16.277 12.812,15.385 C12.812,14.494 13.538,13.771 14.435,13.771 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="carousel__buy-txt">
+                                        Купить
+                                    </div>
+                                </div>
+                                <!--/btn-buy-->
+
+                                <!--show-more-->
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+                                <!--/show-more-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/carousel__item-->
+
+                </div>
+                <!--/carousel__line-->
+            </div>
+            <!--/carousel-->
+
+        </div>
+        <div class="slider-content-repeated__item this-counter-box">
+
+            <div class="slider-content-repeated__txt-list row">
+                <span class="slider-content-repeated__title">Акции</span>
+                <div class="ROW"></div>
+                <span class="show-more txt-color-blue">Все акции</span>
+            </div>
+
+            <!--carousel-->
+            <div class="carousel row">
+                <!--carousel__line-->
+                <div class="carousel__line row">
+
+                    <!--carousel__item-->
+                    <div class="carousel__item-wrapper">
+
+                        <div class="carousel__item column">
+                            <div class="carousel__title txt-color-blue">
+                                Название акции
+                            </div>
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20786.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus doloremque
+                                harum incidunt itaque, quo rerum unde veniam voluptate. Culpa?
+                            </div>
+
+
+                            <!--counter-->
+                            <div class="carousel__count-wrapper">
+                                <div class="carousel__count-box row">
+                                    <div class="carousel__validity-txt">Срок действия:</div>
+                                    <div class="Infinity">бессрочно</div>
+                                    <div class="carousel__counter row">
+                                        <div class="carousel__time-wrapper day column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">дней</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper hour column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">часов</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper minute column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">минут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/counter-->
+
+
+                            <!--show-more-->
+                            <div class="carousel__wrapper-show-more">
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+
+                            </div>
+                            <!--/show-more-->
+
+
+                        </div>
+                    </div>
+                    <div class="carousel__item-wrapper">
+
+                        <div class="carousel__item column">
+                            <div class="carousel__title txt-color-blue">
+                                Название акции
+                            </div>
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20785.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus doloremque
+                                harum incidunt itaque, quo rerum unde veniam voluptate. Culpa?
+                            </div>
+
+
+                            <!--counter-->
+                            <div class="carousel__count-wrapper">
+                                <div class="carousel__count-box row">
+                                    <div class="carousel__validity-txt">Срок действия:</div>
+                                    <div class="Infinity">бессрочно</div>
+                                    <div class="carousel__counter row">
+                                        <div class="carousel__time-wrapper day column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">дней</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper hour column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">часов</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper minute column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">минут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/counter-->
+
+
+                            <!--show-more-->
+                            <div class="carousel__wrapper-show-more">
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+
+                            </div>
+                            <!--/show-more-->
+
+
+                        </div>
+                    </div>
+                    <div class="carousel__item-wrapper">
+
+                        <div class="carousel__item column">
+                            <div class="carousel__title txt-color-blue">
+                                Название акции
+                            </div>
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20786.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus doloremque
+                                harum incidunt itaque, quo rerum unde veniam voluptate. Culpa?
+                            </div>
+
+
+                            <!--counter-->
+                            <div class="carousel__count-wrapper">
+                                <div class="carousel__count-box row">
+                                    <div class="carousel__validity-txt">Срок действия:</div>
+                                    <div class="Infinity">бессрочно</div>
+                                    <div class="carousel__counter row">
+                                        <div class="carousel__time-wrapper day column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">дней</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper hour column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">часов</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper minute column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">минут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/counter-->
+
+
+                            <!--show-more-->
+                            <div class="carousel__wrapper-show-more">
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+
+                            </div>
+                            <!--/show-more-->
+
+
+                        </div>
+                    </div>
+                    <div class="carousel__item-wrapper">
+
+                        <div class="carousel__item column">
+                            <div class="carousel__title txt-color-blue">
+                                Название акции
+                            </div>
+                            <div class="carousel__wrapper-img">
+                                <img src="img/Layer%20786.png" alt="" class="carousel__img">
+                            </div>
+                            <div class="carousel__subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus doloremque
+                                harum incidunt itaque, quo rerum unde veniam voluptate. Culpa?
+                            </div>
+
+
+                            <!--counter-->
+                            <div class="carousel__count-wrapper">
+                                <div class="carousel__count-box row">
+                                    <div class="carousel__validity-txt">Срок действия:</div>
+                                    <div class="Infinity">бессрочно</div>
+                                    <div class="carousel__counter row">
+                                        <div class="carousel__time-wrapper day column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">дней</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper hour column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">часов</div>
+                                        </div>
+                                        :
+                                        <div class="carousel__time-wrapper minute column">
+                                            <div class="carousel__time">0|0</div>
+                                            <div class="carousel__time-txt">минут</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/counter-->
+
+
+                            <!--show-more-->
+                            <div class="carousel__wrapper-show-more">
+                                <div class="carousel__show-more txt-color-blue">Подробнее</div>
+
+                            </div>
+                            <!--/show-more-->
+
+
+                        </div>
+                    </div>
+                    <!--/carousel__item-->
+                </div>
+                <!--/carousel__line-->
+
+            </div>
+            <!--/carousel__line-->
+        </div>
+        <!--/slider-content-repeated__item-->
+    </div>
+    <!--/slider-content-repeated-->
+
+    <!--buying-right-now-->
+    <div class="buying-right-now-wrapper">
+        <div class="buying-right-now">
+            <div class="slider-content-repeated__txt-list row">
+                <span class="slider-content-repeated__title">Что покупают прямо сейчас</span>
+                <div class="ROW"></div>
+            </div>
+        </div>
+        <div class="buying-right-now__wrapper-item row">
+            <div class="buying-right-now__item">
+                <div class="buying-right-now__wrapper-img">
+                    <img src="img/Layer%20776.png" alt="" class="buying-right-now__img">
+                </div>
+                <div class="buying-right-now__title txt-color-blue">
+                    IP телефон Siemens Gigaset C530A IP
+                </div>
+            </div>
+            <div class="buying-right-now__item">
+                <div class="buying-right-now__wrapper-img">
+                    <img src="img/Layer%20776.png" alt="" class="buying-right-now__img">
+                </div>
+                <div class="buying-right-now__title txt-color-blue">
+                    GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G
+                </div>
+            </div>
+            <div class="buying-right-now__item">
+                <div class="buying-right-now__wrapper-img">
+                    <img src="img/Layer%20776.png" alt="" class="buying-right-now__img">
+                </div>
+                <div class="buying-right-now__title txt-color-blue">
+                    IP телефон Siemens Gigaset C530A IP
+                </div>
+            </div>
+            <div class="buying-right-now__item">
+                <div class="buying-right-now__wrapper-img">
+                    <img src="img/Layer%20776.png" alt="" class="buying-right-now__img">
+                </div>
+                <div class="buying-right-now__title txt-color-blue">
+                    IP телефон Siemens Gigaset C530A IP
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/buying-right-now-->
+
+    <!--brands-->
+    <div class="brands column">
+
+        <div class="brands__wrapper-item">
+            <img src="img/Layer%20794.png" alt="" class="brands__item">
+        </div>
+    </div>
+    <!--/brands-->
+
+    <!--advantage-->
+    <div class="advantage column">
+        <div class="slider-content-repeated__txt-list row">
+            <span class="slider-content-repeated__title">Наши сильные стороны</span>
+            <div class="ROW"></div>
+        </div>
+        <div class="advantage__wrapper-item row">
+            <div class="advantage__item column">
+                <div class="advantage__circle row">
+                    <div class="advantage__svg">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="2.117cm" height="1.905cm">
+                            <image x="0px" y="0px" width="60px" height="54px"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="advantage__txt">Грамотная консультация по каждому товару</div>
+            </div>
+            <div class="advantage__item column">
+                <div class="advantage__circle row">
+                    <div class="advantage__svg margin-left20-top22">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.905cm" height="1.905cm">
+                            <image x="0px" y="0px" width="54px" height="54px"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="advantage__wrapper-txt">
+                    <div class="advantage__txt">Любые способы оплаты</div>
+
+                </div>
+            </div>
+            <div class="advantage__item column">
+                <div class="advantage__circle row">
+                    <div class="advantage__svg  margin-left18-top18">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.94cm" height="1.94cm">
+                            <image x="0px" y="0px" width="55px" height="55px"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="advantage__wrapper-txt">
+                    <div class="advantage__txt">Собственный сервисный центр</div>
+
+                </div>
+            </div>
+            <div class="advantage__item column">
+                <div class="advantage__circle row">
+                    <div class="advantage__svg  margin-left27">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="2.646cm" height="1.235cm">
+                            <image x="0px" y="0px" width="75px" height="35px"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="advantage__wrapper-txt">
+                    <div class="advantage__txt">Разветвленная сеть самовывоза (Pickpoint)</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/advantage-->
+
+    <!--about-company-->
+    <div class="about-company column">
+        <div class="slider-content-repeated__txt-list row">
+            <span class="slider-content-repeated__title">5 причин выбрать нашу компанию</span>
+            <div class="ROW"></div>
+        </div>
+        <div class="about-company__wrapper-item row">
+            <div class="about-company__item redBorder">
+                <div class="about-company__title redBg row">
+                    <div class="about-company__svg">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.811cm" height="0.811cm">
+                            <image x="0px" y="0px" width="23px" height="23px"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAQAAABKIxwrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflAR8PFAZz1nu1AAAAiklEQVQ4y52UWwrEMAwDx7r/ndWPttumfgQ2EIjxSDgOThjABLtlAgT42jMMhvADxggDoBfkHUxocfUMn7VPgk+pSnW7hx+8EhRN0MtrFZQdi0+x+bJLezUlc6zRLT1cxt2cS9xzrCbZPJxauBRocC4EauFSoAEuBBrhJPh7mqbh/jH3NO1+gos5AHeWKyj9kjsgAAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                    <div class="about-company__txt">
+                        С чем сталкиваются клиенты в 85% случаев, когда обращаются к нашим конкурентам?
+                    </div>
+                </div>
+                <ul class="about-company__list-benefit">
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Eveniet, voluptatum!</span>
+                    </li>
+                    <li class="about-company__benefit">
+                        <span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing</strong> elit. Magnam obcaecati officia optio, qui recusandae vel.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, similique soluta.</strong> Animi doloribus, ducimus ipsam magni maiores maxime obcaecati quod.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Consequatur, culpa?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-company__item greenBorder">
+                <div class="about-company__title greenBg row">
+                    <div class="about-company__svg marginTop0">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.023cm" height="0.706cm">
+                            <image x="0px" y="0px" width="29px" height="20px"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAQAAADblf5MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflAR8RHQa0rE6GAAAAeElEQVQ4y53TSw4AIQgD0Jb735lZGD8MoqA7TV5QqFQ8LAUBeYKAAixXHaBadVZijS6wVtXATjMP/sFGNYEdBGQcag0Csmy0AtuFzziAvU0xDuEczh4f4DpXj4/QRsLiC/Tx940KoA8is3CXYebgPv7MwOjn8A6BD/sWHyMOpbN5AAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                    <div class="about-company__txt">
+                        Какой сервис предложим Вам мы?
+                    </div>
+                </div>
+                <ul class="about-company__list-benefit">
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Eveniet, voluptatum!</span>
+                    </li>
+                    <li class="about-company__benefit">
+                        <span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing</strong> elit. Magnam obcaecati officia optio, qui recusandae vel.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, similique soluta.</strong> Animi doloribus, ducimus ipsam magni maiores maxime obcaecati quod.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing.</span>
+                    </li>
+                    <li class="about-company__benefit"><span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Consequatur, culpa?</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/about-company-->
+
+    <!--info-number-company-->
+    <div class="info-number-company">
+        <div class="slider-content-repeated__txt-list row">
+            <span class="slider-content-repeated__title">Мы в цифрах</span>
+            <div class="ROW"></div>
+        </div>
+        <div class="info-number-company__wrapper-item row">
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <span class="info-number-company__circle-content oneNum">10</span>
+                </div>
+                <div class="info-number-company__txt">10 лет на рынке</div>
+            </div>
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <span class="info-number-company__circle-content">25/5</span>
+                </div>
+                <div class="info-number-company__txt">25 профильных специалистов, 5 менеджеров отдела продаж</div>
+            </div>
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <div class="info-number-company__circle-content column">
+                        <div class="x100">
+                            <div class="x100__item">2222</div>
+                            <div class="x100__item">X</div>
+                            <div class="x100__item">100</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="info-number-company__txt">2222 товара в каталоге среди 100 брендов</div>
+            </div>
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <span class="info-number-company__circle-content oneNum">29</span>
+                </div>
+                <div class="info-number-company__txt">29 торговых партнеров</div>
+            </div>
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <span class="info-number-company__circle-content oneNum">14</span>
+                </div>
+                <div class="info-number-company__txt">14 отгрузок в сутки</div>
+            </div>
+            <div class="info-number-company__item column">
+                <div class="info-number-company__circle">
+                    <span class="info-number-company__circle-content oneNum marginLeft22">1</span>
+                </div>
+                <div class="info-number-company__txt">1 из лидеров рынка</div>
+            </div>
+        </div>
+    </div>
+    <!--/info-number-company-->
+
+    <!--work instruction-->
+    <div class="work-instruction">
+        <div class="slider-content-repeated__txt-list row">
+            <span class="slider-content-repeated__title">Как с нами работать?</span>
+            <div class="ROW"></div>
+        </div>
+        <div class="work-instruction__wrapper-box-content column">
+            <div class="work-instruction__box-content row">
+                <div class="work-instruction__direction row">
+                    <div class="work-instruction__title-direction">В розницу</div>
+                    <div class="work-instruction__info-btn">Оптовикам</div>
+                    <div class="work-instruction__info-btn">Партнерам</div>
+                    <div class="work-instruction__info-btn">Покупая с настройкой</div>
+                </div>
+            </div>
+            <div class="work-instruction__box-content row">
+                <div class="work-instruction__work-steps row">
+                    <div class="work-instruction__work-steps-item row">
+                        <div class="work-instruction__item-svg">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.129cm" height="1.129cm">
+                                <image x="0px" y="0px" width="32px" height="32px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABzlBMVEX/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb////x5/uAAAAAmHRSTlMAG9/kxpdeJQIIDRnV6frmmDoLb7e/hyIEJDNHdLD47Y8KnNIsMP7LMgNFz949hCshGh2u3eD7YtHOrGgRr8zomuVjARiON3LIkQdE7DnnNG6TsypT6zHy6iajcbHK3Kpp9NgX4UjFEMM20H1bLtna4iO8FBYGp11C86EOnwxfKJTXBduZYbL5ulonLdSMwuMp8HNGoBJkg+dk74MAAAABYktHRJkB1jaoAAAAB3RJTUUH5QIBEwUYOFplrgAAAfBJREFUOMt1kvcjW1EUx6+RQWRUjQghqAwvdswGJXbtEQ1iNLWV2tomWpQOu6jz5/a+O5L3SM4v99zz/bx77vneh5A84uITEhVKlVpeTUoOp5oUrQ5Ab3ghkVNfpqVnZLKNMcuUnWPOhTyLhuv5BYCj8JX0kyKFFWx2qQ5gdsi6FgvgLCFZKdVBW0ZblFdQorIKXEViUs2AmlpSr6irb3hN2rsboUmEmxkAbyjQglNXqwenbQK048XJAVubCHg0HZ1dAN09OH+r6+1DSOBA/0B4iME8GBKtMoDBiIY5ED8SmWF0DMQrecff+ZCFAxNGMoWbuDwJLnzBpClQolam+1V0uukZk+iODWbxkgMKZJoj+nsfPTzwAaq9eO2EGXzivG4BLS4RICWVAmpvA5ixtAwruId9TI88q7TFGr/gx/UNN/bjU9MmQiphA7O9BNgycmJbg59FHdjBBcdOAKHdPQLk7qNYcfCZEOuZsQD1F/bgX2MRPj0lgqFYxGENOyOLFb7ZAzLA8Z3ZeaQ8xltV8KTF/+O0TEKEzhjx89fv0B8//YP0VecRIi6dv5n14oSnUFceISrPIEpcSrosdlufA1fSuRyn18+ArXzZMDfB2yfA36eG3O1ppfp9FG87Vq/Gw3oyihYP9n+WYcHZPP1I/qH/mK/pd4g7O0gAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="work-instruction__txt">
+                            <strong>1.</strong>Обращение через сайт/ по телефону
+                        </div>
+                    </div>
+                    <div class="work-instruction__svg-row">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.588cm" height="0.353cm">
+                            <path fill-rule="evenodd" fill="rgb(219, 222, 230)"
+                                  d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
+                        </svg>
+                    </div>
+                    <div class="work-instruction__work-steps-item row">
+                        <div class="work-instruction__item-svg">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.129cm" height="1.129cm">
+                                <image x="0px" y="0px" width="32px" height="32px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEX/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb///+LfXejAAAAPnRSTlMAAgxzxuftIssjDc7P98qtJhQWJcnq9iHp7uwTBAMBbp5l/gWdFQr7YsSK+lkXw4K1R3pfP/FGWiCurHLMC3EcazkAAAABYktHRD8+YzB1AAAAB3RJTUUH5QIBEwUm+Tt4BQAAARtJREFUOMuFk9lCwjAQRW9aKFC2tipYIRGXuisuqGh1/v+zTLCEtknDPKQP53SbuQMGz2+1A0u1W74HBnS61FjdHhD2yVGDEL66Dm2vGCriYyTPcRQnRsUHY4kOcUQ0mcJa0wnRMVKikxnmlkIcEKWQR5DYhUTeHDQInLsFDgiXwHG6kE6jwHF2TosLQxCsxIkuRVYVcMVYiV/fiOoTMLu9A9P8/qH2DeLxiWgJtuO8IrD5sxrNEjte+03xkirj9U3zeh+wSrch+OdGo7RRcLOThbHlllZvDM1ts8DqnTS3Dgsfn5rbp4nS2Aphb+RUaNf20K43oVWx/4oyM/ZZ9C3RCPm+xQkHrtXre0Dvx7G8Hcj99vKm9c9/wf8Aje13yWfAE3wAAAAASUVORK5CYII="/>
+                            </svg>
+                        </div>
+                        <div class="work-instruction__txt">
+                            <strong>2.</strong>Подтверждение заказа
+                        </div>
+                    </div>
+                    <div class="work-instruction__svg-row">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.588cm" height="0.353cm">
+                            <path fill-rule="evenodd" fill="rgb(219, 222, 230)"
+                                  d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
+                        </svg>
+                    </div>
+                    <div class="work-instruction__work-steps-item row">
+                        <div class="work-instruction__item-svg">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.693cm" height="1.199cm">
+                                <image x="0px" y="0px" width="48px" height="34px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAiCAMAAAAuwqolAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAByFBMVEX/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb////OgUa4AAAAlnRSTlMAYsfNzMurQyD7aX73JAjd+t/g3vCnAW+xsF5Q6zkJCh61/j3127eJxViWlUkpKo9bi70Z7wwN5VmBe1zmEeccwnKcFDL9K9j8M8T57JeIvNo+E+1xPCxoAn+jZwMa8rh15LLDBddzCwcx4+FSSI4WofFtgkSveA4/UzuRI6akVr5deemMFQZVcA9GRR321jbOJRK5ybNBlc/SAAAAAWJLR0SX5m4brwAAAAd0SU1FB+UCARMFMA3vzVQAAAH/SURBVDjLjZRpW9NAGEVfRJDSCrTUiIqhtqIsKrJFqkAFkSootuygooisFTdwwwVQUREVcbm/10lMJmGapjlfOnd6T6bTmSdEtuTsyd3LyMvfR64o8MCg0JXg5X349rvoFxUDJf5AoDTIjAO2Felg2SGDw3QEKD8qV1QUhY4B4YjtM4+bP6KSTgAn9c2w+SrJzqiuMag9dboEnjP6fB17wtlsW6gHGoxxYxNQ2uzcV84BLTxF2RLnnYULQKvCU1s7EIw5CheBOkvsYEt0Wv+fEOeSNtF1Gb5uS0GOA1eumrmnl3OtS524DvhlyYT62BI3TCFhHkA4yXL/ABv44xbU48YgFxojQzrJYTUXwpbwSIYdj+YiA50FtkIEGRkYa7MRxuGA/+YtsX97Ao7cUQThrk3JM5loDRuhTy+G7vVMTXlH70+n1eMzw7Nzyrx34X9M6cIDNZTPLab1Hxo39dFjLT/R4+zTpWh0mZ6J/efsuxcvX63I7PO1OtG0awdvfEL/rXr5UmyQyGGjhjRhSehPxLSrpeElmvcIghwQhHdEqzywd8GauQeNFnEH6yRV8ZBP9B74YBU+isIKbQR5KP5En9H7xSpsJr8uW9jaUujbdy5MNlP/YjdlQU5xIU/KVtao2XUkLoi16/0fm+4E2q7U+j93XPaJfs38/vN3RDbiPzlvajrpo9qFAAAAAElFTkSuQmCC"/>
+                            </svg>
+                        </div>
+                        <div class="work-instruction__txt">
+                            <strong>3.</strong>Доставка товара
+                        </div>
+                    </div>
+                    <div class="work-instruction__svg-row">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.588cm" height="0.353cm">
+                            <path fill-rule="evenodd" fill="rgb(219, 222, 230)"
+                                  d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
+                        </svg>
+                    </div>
+                    <div class="work-instruction__work-steps-item row marginTop15">
+                        <div class="work-instruction__item-svg">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="1.235cm" height="1.235cm">
+                                <image x="0px" y="0px" width="35px" height="35px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABy1BMVEX/WBb/////WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb/WBb////M9EU6AAAAl3RSTlMAAAIDCjtONREBBEXU5bt9SR8v9PHFkF0qB6GHteP4p20L4Cw2cKvY/Jwr+tcFCTBmo9obYp4kV5XH959nDg8QDQzq7Obf4eLk3vv+uUitcvLR0NYxBm587bcd9rYi9ReZjJim3JRMr6J1Lv1BLTPVYGlRxIi8s72CJe4n6MzBwumk59vzISkgtM40palob9NPzRI4U1IocnKcugAAAAFiS0dEAf8CLd4AAAAHdElNRQflAgETBTl0M3XwAAACHElEQVQ4y32UiVcSQRzHfzuD5SKVRKlYS4BdhktlpXmkZQkklUFQWGp0GZVa2k33Zaed2PffbWbcCNylz5u3b3fm897M/L4zS4wxzshVt2p1PQl09W3Blx/E3G43NXgArFm7rtErPdlVAZcdtN4Hiw0bm5pb/FLkK5xWwLNps2F5Ac+WoJy40tFDYQTaiOq3btu+Y6clGu1eqnBoVwQdps7lDNHde/Z2BJTVuU+vcPYDB+gfZlf3wZ5e2Vd2dOoD+l2HBAOCwYHDUc6PdAcw5FpeuJjADB4Fjg2Hw+FYLBaPxw3DSCTix0eQPHFSSZz8p1CbIClnFDidciJ9Boi0kXRSGMpwM2uKli0jX03zbBLnlJPDmArJDp2/oPYmnfGKuldCE5NlZ2ylw6xCXfQhTxp3cog1XsoLLl8ZwdVrU5pmd9jg9ar9F0ybw/WCGEhaSOmGzaGbt5CenmnJzEoyoxHctjt3gGYKzfxNuAc5uzMHzPO7uGdldb+Wk83hgeU8dHL6hUMNjx7rXMCEU7Q700CelQ/ck6cwbA6LPgPSz19YvARe2WtIs6+rahiecMqiK596I+gcTuKtJ/9Oc8pUnN+QwL8wiVa3pjnmLhalC+i9D+1ijFMRH2qdH68Pfer8JPCRavApgiblfAa+LM45sPj1G/BdOQvF/9ydcT9Td7DuRy2jt/BTV5np5P81XyotLYlWRWnqt/gLycz+AJiPCXryIkt3AAAAAElFTkSuQmCC"/>
+                            </svg>
+                        </div>
+                        <div class="work-instruction__txt">
+                            <strong>4.</strong>Оплата товара при получении, либо предоплата побезналичному расчету до
+                            п.3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-instruction__info-box row">
+            <div class="work-instruction__info-txt">Lorem ipsum dolor sit amet,
+                <span class="redhead-color">consectetur adipisicing elit</span>. Adipisci
+                dolor esse eveniet illum natus odio, tempore. Accusantium aliquam amet aspernatur atque aut consectetur
+                debitis dignissimos dolorem est ex illo impedit in labore laboriosam, laudantium maxime minima obcaecati
+                odio officiis omnis perferendis quae repellat repudiandae sapiente sed temporibus unde velit. Ab eum,
+                exercitationem laboriosam obcaecati quas rerum sunt! Aliquid architecto aspernatur blanditiis corporis
+                cumque dolore eligendi ex in iste laudantium <span class="redhead-color">mollitia pariatur</span> porro,
+                possimus quasi quo
+                repellat, vero!
+                <br>
+                <br>
+                Asperiores dolor, <span class="redhead-color">expedita hic iusto magni maxime nesciunt odio quaerat tempora!</span>
+                Autem facere ipsam
+                minima molestiae odit porro praesentium quidem quis reiciendis rem!
+            </div>
+            <div class="work-instruction__info-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                consequuntur debitis, distinctio dolorem ducimus ea eius error id iure libero, maxime nemo porro qui
+                reprehenderit totam ullam vero voluptatibus. <span class="redhead-color">Aliquid commodi corporis</span>
+                similique suscipit tenetur?
+                Aliquid asperiores beatae explicabo, minima perspiciatis qui quibusdam. Beatae debitis dicta earum id
+                iure nisi non obcaecati odio odit sed? Beatae cumque delectus error minima necessitatibus nemo odit
+                temporibus tenetur vitae voluptate. <span class="redhead-color">Dolorum eaque eligendi id inventore ipsa maxime obcaecati possimus</span>
+                quas ratione, saepe soluta.
+            </div>
+        </div>
+    </div>
+    <!--/work instruction-->
+
+</div>
+<!--/page-->
+
+<!--bot-->
+<div class="bot column">
+    <div class="bot__wrapper">
+        <div class="top-bar__logo column q">
+            <div class="top-bar__logo-wrapper">
+                <div>HO<span class="redhead">MY</span>RU</div>
+                <div class="top-bar__subtitle-logo">
+                    борудование и решение для VOIP
+                </div>
+            </div>
+            <div class="top-bar__subtitle-logo"><p>© ХомиРу, 2006-2016</p>
+                <p>Оборудование и решения для VoIP</p></div>
+            <div class="top-bar__subtitle-logo"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet</p>
+                <p>consectetur debitis esse odit ratione voluptatum?</p>
+            </div>
+        </div>
+        <div class="bot__address column q">
+            <p class="bot__address--item">г. Москва, Зеленоград,</p>
+            <p class="bot__address--item">Панфиловский пр., дом 8, строение 1</p>
+            <a class="bot__map" href="#">схема проезда</a></div>
+        <div class="bot__nav column q">
+            <div class="bot__link">Доставка и оплата</div>
+            <div class="bot__link">Гарантии и возврат</div>
+            <div class="bot__link">Техподдержка</div>
+            <div class="bot__link">Контакты</div>
+        </div>
+        <div class="top-bar__feedback column q">
+            <a href="tel:84952554466" class="top-bar__number-phone">+7 495 2-55-44-66</a>
+            <div class="top-bar__operating-mode">(пн-пт с 9 до 18 ч)</div>
+            <div class="top-bar__social row">
+                <div class="top-bar__wh">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.564cm" height="0.564cm">
+                        <image x="0px" y="0px" width="16px" height="16px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEXX8NnI68uc2qKU2JvB6MTP7dLK683C6MXc8d3U7tbU7Nev4LbS69WBzI2t37ST25mB14mE14px1Xtm03Bl0m9w1HiC14uC14qM2JKZ2Z+K2JBi0Wxh0myD14uR2JjP7NF1035v0nnH6svF6cih4KeZ3qC85sGk3qlTymBSy1+c3KKM2JSA1YlfzGtZymZJxFlJxFhEwlREw1VPxF9Jw1p2zoJoynWw37Y5vEwntz2p3bDZ7NtmyHR3z4TV7Ni74sFUwmVPwGCz4bqo3LAvt0VCu1UttkMktDpZwmmEzo+237x1yIJrxnhkxHOAy4tRvmI2t0sqtEA0uElOvmB7y4eP0JhY0WNa0WZc0mhX0WRMzFlLy1hTzWBa0Gdaz2Zaz2dbz2ZYz2RQzV1IyVRZzmWT3pt11n9SzGBWzWNWzWRXzWRWzmNLzFlGx1Se4KX//v/S79VWzGNOylxSy2BTy2BUzGE7xExWy2TR8NT////+/v9+1olHxlZNyVxOyV1PyV1RyV5Ex1M+xE9Px17I7c7z+vVzz39DxFRKx1lLx1pKx1pExFQ7wEyY3aHG6stEwlRBw1BHxVZGxVZExFVFxVVGxFZFxFVCwlM5wEtJw1nL7c+G15E2vkg9wU87wE08wE1Bw1JBwlI5vks/wFEvu0JeyGzi9eSN2Zc7v05NxV2u5LaO2ZhGw1g7v0wsukE7vk06vkwpuDxkynLc8+DC6sjA6MZBwFMnuDwyukU3u0k1vEkktjpPw2G35b2z4rkyuEYltjoyukcyuUYyukYjtTkrt0FZxGmQ1pqq37GU1p1Au1IZsTAgtDYotj4rtkAuuEMuuEQntj0esjYisjgptD4gsTYUrywotD4gsjcmtD0qtj8qtkAktDobsTQVvf9UAAAAVnRSTlMAAAAAAAAAAAAAAAAAAAABJG+00tK2dCgCCm/q8HcMCJSdCgF1gQEo8PUufo/F0OLj4+TM1IuaMu/9OgWilgMKsrUULOnI8v6UFyBTIRA2lM/k0Zg7B9C5b1sAAAABYktHRHmh3NTQAAAAB3RJTUUH5QEYEw8vELlK7gAAARtJREFUGNMBEAHv/gAAAQIPEBESExQVFhcYAwQFAAAGGRobVldYWFdZHB0eBwUACB8gWltcXV5eX2BhYiEiCQAjJGNkZWZnaGlqa2pobCUmACcobW5vcHFyc3RndHVyKSoAK3Z3eHl6e3x9fn5+f4CBLAAtgoOEeYWGh4iJiomKinwuAC+LjI15jo+QkZKTlJKVljAAMZeYmZp5m5yMnZ2en6ChMgAzoqOkpaZ5p6ipqqusnq00ADWur7CxsrN5mrR5ebW2tzYANzi4ubq7vL2FeXl5vr85OgA7PMDBwsPExcbHyMnKyz0+AD9AzM3Oz9DR0tPU1dZBQgoAQ9dERUbY2drb3N1HSEkLDABKS0xNTk9QUVFSU1RVDQ4MKx9uqQwjmGwAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+                <div class="top-bar__viber">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.564cm" height="0.635cm">
+                        <image x="0px" y="0px" width="16px" height="18px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACoFBMVEXu6PLYzOG9qM3l3uvv6fLm3+vSxd3PwNnZzePRxNzQwdrWyt/Xy+HWy+Hf1ueznMadf7XOvtjVyN7c0+Xd1OXk3OqDXqKLZ6iRbayaerOkh7uxmsXYzuLYzeLo4+60nseDXaGRcK2rkcCVcq6HYqaAWKB9VJ5+VZ6AV5+KZaeXdrGqkL+LZ6jTxd2GYKWBWaG5pMrl2+uPbKyIYqXd0+W1nsiwl8SVdLCPbKqGX6SDXaJ/Vp+AVp99VJ1/VZ99U52AWKGBWKCEXaOQbqyTcq6zm8avl8O/q86OaqqMZ6m4o8nHttWHYqV1SZh2SpiLZ6jFs9KYeLGwlsR/Vp6HZKaIY6aLZaePa6qYd7Knjb6df7XQwduHYaWpj76FYaSMaKiSbq2bfLSmibzHt9Wrj7+qkb/a0OTHttWkibvp4+91SZhzR5d3TJl7UJt8U519VJ55T5t2Sph3TJpwQ5SAV5+Sb619VZ5zRpaSbqy4oMmvl8SRb616T5t1SJdwRJR/V5/JuNf7+fyznMZuQJJ/Vp+fgbexmcXDr9Glibx6UJtzR5ZxRJWYd7L////z7/ZvQZOfgri6pMuvlsPCrtF6Tpp1SpiKZajw6vT49vmtlMFpOo+zm8a6o8y1nce2n8h/VZ55Tpp2S5m5ocvRw9x4TZqWdbGqkMCtlMLArdCHYqZ6UJyIYqXw6/Pd0eZ8U5yLZ6irkL+JZKd7UZxzSJeqjr+7psxsPZBtP5F1SZdsPpF8UZx+VJ53S5nBrtH+/f6/qs6FXqOwmMTRxN2ihLlyRZZ5TZp5T5p1Spe8p8z9/f7t5/H49vry7vWulMN7UZ2hhLnf1efEstNwQpNxRZZ8Upx4TZlyRpWBWaGqj7/WyuHLu9iIY6Z6UZtxRJR7UZt2S5hdg46ZAAAAanRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOSI7A2eLg1b2NSw8rv804EcfYGFxpp7DQ1d/g5OPk3dnRtLJkZBTIyRQqsv7+rSkVcO69wLWbbDYUR+ROFBQSDQNWZwIBR4IEw8Vr2wAAAAFiS0dEjRsM4tUAAAAHdElNRQflARgTEChDh9HTAAABPUlEQVQY0wEyAc3+AAABISIjJCUmJygpKissAgMABC0uamtsbW5vcHFxci8wBQAxMnN0dXZ3eHl6e3xwfTM0ADV+f4CBgoOEhYaHiG2JijYAN4uMjY2OjI+QkZKTjJRxOAA5lZaXjZiZmnubnJ2en2w6ADugoaKNo2yki6Wmp6ippDwAPaqVq6yta4pubK6vsLFwPgA/snyztI21tre4bLm6u3xAAEF8snK8vb6/wMHCw8TFxkIAQ6GyusdsyMnKy43MzXx9RABFi86ysmpqz9CNjY3RcNJGAEdI06qy1NXW19jZ2tuPSUoABktMTdyyxqGL3d6kTk9QBwAICVFSpN9TVFVWV1hZWgoLAAwNDlvSXF1eX2BhYg8QERIAExQVY3JkZRYXGBkaGxAREgAcHWZnaGkeHyAYGRobEBESVbB/thfk5ucAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+                <a href="tel:89031111111" class="top-bar__social-number-phone">
+                    +7 903 111-11-11
+                </a>
+            </div>
+            <a href="mailto:info@homy.ry" class="top-bar__email">info@homy.ry</a>
+        </div>
+    </div>
+</div>
+<!--/bot-->
+
+<!--footer -->
+<div class="footer row">
+    <div class="footer__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet consequatur dicta,
+        explicabo id nihil nobis quisquam ratione sed voluptatum? Beatae consequatur enim ipsa nihil nostrum quasi
+        sunt. Facere, numquam.
+    </div>
+    <div class="footer__item">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="3.104cm" height="1.094cm">
+            <image x="0px" y="0px" width="88px" height="31px"
+                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEWvmdPHws7MzMyrlNHLsPi+pejHt+H+/v7Ly8umjs3Iq/fHqvanj87x7vfKysqfhcjDo/WyleDDst39/f0AAACenp4/Pz/IyMicgcTCofTAoPKghcfz7/eXfcDAnvOsjdnDs9v8/PzHx8eTeLm/nPG9mu6Yfrz18/jGxsaPc7W+mfClhdHEtdn7+/vExMSKbq+8lu62keeSeLX39fnDw8OFaam7k+3dyfb///+ce8bEtdb6+vrCwsKAZKO5kOvcyPWwid+Mcqz4+PnBwcF8X524jencxvSScLnHudf5+fm/v792Wpa2iufbxfOof9WJb6Y+Pj6+vr5yVZG1h+Xaw/KHZavKvdf4+Pi9vb1tUIqzg+PZwfGfdcqHbaCbm5u8vLxnS4OxgOHYwPByUpHf2eb39/e6urpjR36wfd/Yvu+bbsV+Y5f29vaZmZm3t7deQniuet3Xve53VJi/scy2trZaPXGtdtvWu+2basRvU4X19fU9PT21tbVVOWyrc9nVuex1TpSyob+0tLRQNWapb9bUt+uaZcRfRHXx8fL09PSysrJMMWCobNRzSpGjj7GYmJixsbFILVumaNKcYsZUOGfs6e3z8/Ovr69EKlakZM9xRY+TfaJAJlGiYc2eXsdGLFfl4efy8vKXl5eurq49I02hXcpwQYyEa5Ktra05IEifWsidWcU8JEzb1d/x8fE8PDyWlparq6s3HkSeV8ZwPYx0WoOqqqo0HEGcVMSbU8I2HUPPxdTw8PCpqakxGj6bUcNvOoxlSnOoqKgvGDuRhZenp6e/DN4ZAAAAAWJLR0Q4oAel1gAAAAd0SU1FB+UCARQeMzifQfEAAAJJSURBVEjHrZOFcxNBFIcfWly3h0txKy4Pd7fDXQoUAgQIFuQgRYIUK9ri0OB2V9yKw//Fym2y22GYTXrf/O69t/dmvmR2EgCNKlWDAqpVV6hRMysgakHtOgp169UPSNwAGjZSadykqSGEhsKqeJFtWVZ2ct0MmrdQadmqtaGXcLf4ANYtK4uarZS4TVuNdu1zzCA0hIhOj1YO09LqrztAx04anbt0NRbzSuTIzKl1N+jeQ6dnr1wjiF+JHHV6Q5++Ov36DzAV06tgw7+8uQNh0GDJEETWhg4bHgAjYOQoyWhE1saMHReAeDxMmCiZhMj75ClTK880mD5DMhOR91mzMzHZAnmcA3PnceYj0oh5wcJFRrB/Hiv8YCuVshiWLOUsQ6QR8/IVhmK9r7QV8SpYncdZg0gj5ry16/JNoF9WdPqIi8i35W49bAiFQhsRRUKcTZvDphD/YWyxw2FbLrbCtkgksh1RJMLZsTMdse+1lUrZBbuj0egeRJEoY+++/WbQq+CFsIMjkLsDcDAWixUgisQYhw4biv/HETgaj8ePIYrQOX78xMnCynMKTp+pwNlzGbocp7AoeTgPFy7qXLp8pTgzHKe4KHkogavXdK7fMDYRESK9qrkEbt7SuH3nbqkphIUXBhOXJuTuHtx/oPHwkbHXdxLhrSB+DE+eqjx7/sI1h/6EXeKyUBKel3DL5OolvHqt8uZtGl6mToldz0t53Xfw/oPCx0+fy9OC0BB/9rzysuTiC3z9pvD9R3peDU38E35p/P4TFH8BmATtSF4rHZoAAAAASUVORK5CYII="/>
+        </svg>
+    </div>
+</div>
+<!--/footer -->
+<script src="js/index.js"></script>
+</body>
+</html>
