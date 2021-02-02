@@ -92,7 +92,7 @@
 //==============top-bar
 .top-bar
   justify-content: space-between
-  align-items: center
+  align-items: flex-end
 
   &__logo
     font-size: 46px
@@ -202,6 +202,7 @@
 
 //===============catalog
 .catalog
+  margin: 20px 0
   @include redhead-bg
   border-radius: 10px
   padding: 0 10px
@@ -234,6 +235,7 @@
 
 
   &__banner
+    margin-bottom: 30px
     background-color: #d6d6db
     border-radius: 7px
     font-size: 16px
@@ -355,7 +357,13 @@
   background: #d6d6db
 
 .slider-content-repeated
+  margin-top: 20px
+
+  &__item
+    margin-top: 30px
+
   &__txt-list
+    margin-bottom: 20px
     justify-content: space-between
     align-items: center
 
@@ -557,6 +565,8 @@
       .Infinity
         display: block
 
+.buying-right-now-wrapper
+  margin-top: 20px
 
 .buying-right-now
   &__wrapper-item
@@ -577,6 +587,8 @@
 
 //=====================================brands
 .brands
+  margin: 40px 0
+
   &__wrapper-item
 
   &__item
@@ -592,6 +604,7 @@
 
   &__wrapper-item
     justify-content: space-evenly
+    padding-bottom: 30px
 
   &__item
     align-items: center
@@ -626,7 +639,12 @@
 
 
   .slider-content-repeated__title
+    margin-left: 30px
     width: 280px
+
+  .slider-content-repeated__txt-list
+    margin: 0
+    padding: 30px 0
 
   .ROW
     background-color: white
@@ -634,8 +652,10 @@
 
 //=========================about-company
 .about-company
+  margin: 40px 0
+
   &__wrapper-item
-    justify-content: space-evenly
+    justify-content: space-between
     align-items: center
 
   &__item
@@ -768,6 +788,9 @@
 
 //===========================work-instruction
 .work-instruction
+  margin-top: 40px
+  margin-bottom: 70px
+
   &__direction
     align-items: center
 
@@ -787,6 +810,8 @@
     cursor: help
 
   &__work-steps
+    padding-top: 15px
+    padding-bottom: 25px
     align-items: center
 
   &__work-steps-item
@@ -798,6 +823,7 @@
   //position: relative
   //bottom: 10px
   &__info-box
+    padding-top: 30px
     justify-content: space-between
     border-top: 1px solid rgb(214, 214, 219)
 
@@ -819,26 +845,36 @@
     min-width: 230px
 
 
-
 //==============================bot
 .bot
   color: #abbac6
   background-color: #5c7489
 
   &__wrapper
+    padding: 40px 0
     display: flex
     justify-content: center
+
   &__address
     font-size: 13px
+
   &__nav
-  font-size: 13px
+    font-size: 13px
+
+  &__link
+    margin-bottom: 5px
+    text-decoration: underline
+    cursor: pointer
+
   .top-bar__logo-wrapper
     color: black
+
   .top-bar__subtitle-logo
+    margin: 10px 0
     color: #abbac6
+
   .q
     margin: 0 51px
-
 
 
 //==============================footer
