@@ -1,3 +1,273 @@
+@media screen and (max-width: 1300px) {
+  .header__links {
+    margin: 10px 17px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    display: none;
+  }
 
+  .catalog {
+    display: none;
+  }
+
+  .top-bar__search {
+    display: none;
+  }
+
+  .promo {
+    margin-top: 30px;
+  }
+  .promo__content {
+    margin-left: 25px;
+    max-width: 750px;
+  }
+  .promo__banner {
+    font-size: 13px;
+  }
+
+  .news span {
+    font-size: 18px;
+  }
+
+  .carousel {
+    position: relative;
+    left: 35px;
+    width: 700px;
+  }
+  .carousel__img {
+    width: 700px;
+  }
+
+  .slider-content-repeated .carousel__item-wrapper {
+    margin: 0;
+  }
+  .slider-content-repeated .carousel__item {
+    width: 200px;
+    margin: 0 7px;
+    padding: 20px 12px;
+  }
+  .slider-content-repeated .carousel__show-more {
+    margin: 0;
+  }
+  .slider-content-repeated .carousel__line {
+    max-width: 980px;
+  }
+
+  .stock .carousel {
+    width: 980px;
+  }
+  .stock .carousel__item-wrapper {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .stock .carousel__count-box {
+    display: none;
+  }
+  .stock .carousel__subtitle {
+    display: none;
+  }
+  .stock .carousel__title {
+    display: none;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+  .stock .carousel__wrapper-img {
+    display: block;
+    max-width: 200px;
+  }
+  .stock .carousel__img {
+    max-width: 200px;
+  }
+
+  .about-company__item {
+    margin: 0 20px 0 20px;
+    max-width: 45%;
+  }
+
+  .about-company__title {
+    max-width: 100%;
+  }
+
+  .about-company__wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-instruction__info-txt {
+    margin: 0 20px 0 20px;
+  }
+}
+@media screen and (max-width: 751px) {
+  .page {
+    max-width: 750px;
+    padding: 0 10px;
+  }
+
+  .promo__content {
+    max-width: 70%;
+    margin-left: 15px;
+  }
+  .promo__banner {
+    font-size: 10px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+  }
+  .promo .carousel {
+    top: 10%;
+    left: 0;
+    width: 100%;
+  }
+  .promo .carousel__img {
+    width: 512px;
+    height: auto;
+  }
+  .promo .carousel__wrapper-btn {
+    bottom: 140px;
+  }
+
+  .slider-content-repeated .ROW {
+    width: 500px;
+    height: 1px;
+  }
+  .slider-content-repeated .carousel {
+    margin-right: 10px;
+    width: 730px;
+    overflow: hidden;
+    left: 3px;
+  }
+  .work-instruction__work-steps {
+    padding-top: 30px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .work-instruction__work-steps .work-instruction__svg-row {
+    transform: rotate(90deg);
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  .work-instruction__work-steps .work-instruction__work-steps-item {
+    align-self: flex-start;
+  }
+
+  .bot__wrapper {
+    margin: 0;
+  }
+  .bot__wrapper .top-bar__logo {
+    margin-left: 5px;
+  }
+
+  .about-company__item {
+    margin: 0;
+    height: 100%;
+  }
+
+  .info-number-company__wrapper-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info-number-company__item {
+    padding: 10px;
+  }
+
+  .buying-right-now__wrapper-item {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 321px) {
+  .page {
+    max-width: 320px;
+    overflow: hidden;
+  }
+
+  .slider-content-repeated .carousel {
+    margin: 0 auto;
+    max-width: 240px;
+    overflow: hidden;
+  }
+
+  .slider-content-repeated__screen320 {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    padding-right: 10px;
+  }
+
+  .promo {
+    display: none;
+  }
+
+  .personal-info__personal-area {
+    display: none;
+  }
+
+  .top-bar__feedback {
+    display: none;
+  }
+  .top-bar__likes {
+    display: none;
+  }
+  .top-bar__pannier-item {
+    display: none;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  .about-company__wrapper-item {
+    display: none;
+  }
+
+  .slider-content-repeated__title {
+    font-size: 14px;
+  }
+
+  .advantage__wrapper-item {
+    flex-wrap: wrap;
+  }
+
+  .work-instruction__direction {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .work-instruction__info-btn {
+    margin: 5px 4px;
+  }
+  .work-instruction__info-box {
+    flex-direction: column;
+  }
+
+  .work-instruction__title-direction {
+    padding: 7px 15px;
+    margin: 5px 4px;
+  }
+
+  .bot__wrapper {
+    flex-direction: column;
+  }
+
+  .wrapper-logo-screen320 {
+    display: block;
+  }
+
+  .slider-content-repeated__screen320 {
+    display: block;
+  }
+
+  .wrapper-circle-btn {
+    display: block;
+  }
+
+  .bot {
+    text-align: center;
+  }
+  .bot .q {
+    margin: 0 0;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */

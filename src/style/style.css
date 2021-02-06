@@ -226,6 +226,7 @@
   color: #4673ab;
   cursor: pointer;
 }
+
 .news {
   font-size: 22px;
   max-width: 370px;
@@ -279,7 +280,7 @@
 }
 
 .carousel {
-  max-width: 825px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .carousel__line {
@@ -330,7 +331,6 @@
   font-size: 22px;
 }
 .slider-content-repeated .carousel {
-  min-width: 1140px;
   overflow: visible;
   margin-bottom: 10px;
 }
@@ -436,10 +436,6 @@
 .slider-content-repeated .this-counter-box .carousel__wrapper-img {
   position: relative;
   right: 2px;
-  width: 248px;
-}
-.slider-content-repeated .this-counter-box .carousel__img {
-  width: 100%;
 }
 .slider-content-repeated .this-counter-box .carousel__title {
   height: 20px;
@@ -521,7 +517,7 @@
   margin: 40px 0;
 }
 .brands__item {
-  max-width: 1140px;
+  max-width: 99%;
 }
 .brands .slider-content-repeated__title {
   min-width: 270px;
@@ -612,7 +608,7 @@
   margin-left: 20px;
 }
 .about-company__benefit {
-  margin: 20px 0;
+  margin: 20px 5px 20px 0;
   font-size: 15px;
 }
 .about-company__benefit span {
@@ -800,6 +796,48 @@
 }
 .footer__item svg {
   margin-top: 10px;
+}
+
+.stock {
+  display: none;
+}
+
+.slider-content-repeated__screen320 {
+  display: none;
+}
+
+.wrapper-logo-screen320 {
+  display: none;
+}
+.wrapper-logo-screen320 .top-bar__screen320 {
+  height: 20px;
+}
+.wrapper-logo-screen320 .top-bar__number-phone {
+  font-size: 23px;
+}
+.wrapper-logo-screen320 .top-bar__social-number-phone {
+  height: 20px;
+}
+.wrapper-logo-screen320 .top-bar__wh {
+  position: relative;
+  bottom: 22px;
+  height: 20px;
+}
+.wrapper-logo-screen320 .top-bar__viber {
+  position: relative;
+  bottom: 18px;
+  height: 20px;
+}
+
+.wrapper-circle-btn {
+  border-radius: 50%;
+  border: 3px solid #dbdee6;
+  padding: 5px 8px;
+  display: none;
+}
+
+.slider-content-repeated__screen320-prev {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

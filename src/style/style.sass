@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
 
-
 *
   padding: 0
   margin: 0
@@ -254,7 +253,6 @@
   @include text-colorBlue
   cursor: pointer
 
-  &__carousel
 
 .news
   font-size: 22px
@@ -316,12 +314,11 @@
 
 //===============carousel
 .carousel
-  max-width: 825px
+  border-radius: 10px
   overflow: hidden
 
   &__line
     position: relative
-
 
   &__img
     max-width: 825px
@@ -371,7 +368,7 @@
     font-size: 22px
 
   .carousel
-    min-width: 1140px
+    //min-width: 100%
     overflow: visible
     margin-bottom: 10px
 
@@ -481,6 +478,7 @@
 
       &__item-wrapper
 
+
       &__item
         max-height: 500px
         padding: 0
@@ -493,10 +491,10 @@
       &__wrapper-img
         position: relative
         right: 2px
-        width: 248px
+      //width: 248px
 
       &__img
-        width: 100%
+      //width: 100%
 
 
       &__title
@@ -592,7 +590,7 @@
   &__wrapper-item
 
   &__item
-    max-width: 1140px
+    max-width: 99%
 
   .slider-content-repeated__title
     min-width: 270px
@@ -688,7 +686,7 @@
 
 
   &__benefit
-    margin: 20px 0
+    margin: 20px 5px 20px 0
     font-size: 15px
 
     span
@@ -893,3 +891,41 @@
   &__item
     svg
       margin-top: 10px
+
+.stock
+  display: none
+
+.slider-content-repeated__screen320
+  display: none
+
+.wrapper-logo-screen320
+  display: none
+
+  .top-bar__screen320
+    height: 20px
+
+  .top-bar__number-phone
+    font-size: 23px
+
+  .top-bar__social-number-phone
+
+    height: 20px
+
+  .top-bar__wh
+    position: relative
+    bottom: 22px
+    height: 20px
+
+  .top-bar__viber
+    position: relative
+    bottom: 18px
+    height: 20px
+
+.wrapper-circle-btn
+  border-radius: 50%
+  border: 3px solid #dbdee6
+  padding: 5px 8px
+  display: none
+
+.slider-content-repeated__screen320-prev
+  margin-left: 10px
